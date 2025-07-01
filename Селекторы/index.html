@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Селекторы</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Заголовок 1</h1>
+	<h2>Заголовок 2</h2>
+	<h3>Заголовок 3</h3>
+
+	<ul>
+		<li>text <i>italic</i></li>
+		<li>text <i>italic</i></li>
+		<li>text <i>italic</i></li>
+		<li>text <i>italic</i></li>
+	</ul>
+
+	<p>
+		paragraph text <i>italic</i>
+	</p>
+	<p>
+		paragraph text <i>italic</i>
+	</p>
+
+	<p>
+		paragraph text <b><i>bold italic</i></b>
+	</p>
+	<p>
+		paragraph text <i>italic</i>
+	</p>
+
+	<ul>
+		<li>
+			<i>italic</i>
+			<b>bold</b>
+			<b><i>bold italic</i></b>
+		</li>
+		<li>
+			<i>italic</i>
+			<b>bold</b>
+			<b><i>bold italic</i></b>
+		</li>
+	</ul>
+
+	<!-- Чтобы отнести тег какому-нибудь классу, нужно этому тегу написать атрибут class, а в нем - придуманное вами название класса, состоящее из букв, цифр, символов подчеркивания и дефиса. -->
+
+	<ul>
+		<li class="odd">text</li>
+		<li class="eve">text</li>
+		<li class="odd">text</li>
+		<li class="eve">text</li>
+		<li class="odd">text</li>
+		<li class="eve">text</li>
+	</ul>
+
+	<h2 class="eee">Классы элементов в CSS</h2>
+	<p class="eee">
+		paragraph
+	</p>
+	<p class="eee">
+		paragraph
+	</p>
+	<p>
+		paragraph without class
+	</p>
+
+	<ul class="eee">
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+		<li>text</li>
+	</ul>
+
+	<!-- специальный тег span - сам по себе он абсолютно ничего не делает, но для него можно применить CSS стили, которые позволят нам добавить нужный эффект к кусочку текста. -->
+
+	<h2>Тег span для кусочков текста в HTML</h2>
+	<p>
+		Lorem ipsum <span class="xxx">dolor
+			sit</span>
+		amet.
+	</p>
+	<p>
+		<span class="xxx">Lorem ipsum</span> dolor sit amet.
+	</p>
+
+	<!-- Существует также специальный тег div, который позволяет сгруппировать несколько тегов, чтобы применить ко всем ним CSS стили. -->
+
+	<h2>Тег div для группировки тегов в HTML</h2>
+
+	<div class="block1">
+		<h2>block 1</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+	<div class="block2">
+		<h2>block 2</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+	<div class="block3">
+		<h2>block 3</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+
+	<div class="red">
+		<h2>red</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+	<div class="green">
+		<h2>green</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+	<div class="red">
+		<h2>red</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+	<div class="green">
+		<h2>green</h2>
+		<p>
+			text
+		</p>
+		<p>
+			text
+		</p>
+	</div>
+
+	<h2>Тег с заданным классом в CSS</h2>
+
+	<h2 class="header">text</h2>
+	<h2 class="header">text</h2>
+	<h3 class="header">text</h3>
+	<h3 class="header">text</h3>
+
+	<h2>Селектор потомков и классы в CSS</h2>
+
+	<p class="eee">
+		text <i>italic</i>
+	</p>
+	<p class="eee">
+		text <i>italic</i>
+	</p>
+	<div class="eee">
+		text <i>italic</i>
+	</div>
+	<div class="eee">
+		text <i>italic</i>
+	</div>
+
+	<h2>Сложные комбинации селектора потомков и классов в CSS</h2>
+
+	<div class="eee">
+		<h3>Заголовок 1</h3>
+		<p class="bbb">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quis possimus nemo sunt aliquam nihil harum
+			fugiat hic accusamus commodi reprehenderit, ducimus velit iure voluptatibus ipsa vero quia, omnis itaque?
+		</p>
+		<h3 class="bbb">Заголовок 2</h3>
+		<p class="ccc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi explicabo, harum fuga alias ullam
+			nostrum vel tempora sed unde autem adipisci dolores eaque laboriosam, a provident, veniam beatae enim
+			delectus.</p>
+		<div>
+			<div class="bbb">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ducimus aspernatur. Vero porro
+					libero deserunt numquam, nesciunt rem maxime distinctio nostrum qui non ut totam sunt? Numquam
+					libero nesciunt reprehenderit?</p>
+			</div>
+			<div class="kkk">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque rem inventore, rerum dolores
+					reprehenderit laudantium. Consequatur, minima fugiat sequi, voluptate quidem modi harum ipsa libero
+					tenetur nemo eius architecto neque!</p>
+			</div>
+			<h2>Ошибка новичков в селекторе потомков</h2>
+			<p class="fff">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, minus? Aliquam ex
+				veritatis natus ipsa quidem, laudantium ipsam nostrum fugit dignissimos soluta atque culpa reiciendis
+				molestias quis quasi non! Doloremque.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i class="fff">Consequatur iure obcaecati hic,
+					ullam error blanditiis aspernatur illum inventore</i> beatae itaque facere <b class="fff">voluptates
+					labore. Modi iusto qui expedita, distinctio</b> quam deleniti!</p>
+			<div class="eee">
+				<p>Lorem ipsum dolor sit amet <b class="rrr">consectetur adipisicing elit. Incidunt quod commodi cumque
+						placeat a quia</b>
+					corrupti blanditiis qui illo vitae magnam nisi provident autem soluta fugit, totam quae odio
+					nostrum.</p>
+				<p class="fff">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, optio excepturi
+					quibusdam quia voluptates porro doloremque recusandae minus fugiat, consequatur enim a qui voluptate
+					eius incidunt molestias harum. Totam, odit?</p>
+			</div>
+
+			<h2>Элемент с несколькими CSS классами</h2>
+			<!-- Можно одновременно задать несколько CSS классов какому-нибудь тегу. Для этого в атрибуте class эти классы нужно перечислить через пробел. -->
+			<p class="success large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tempore vel rem
+				vero rerum magnam assumenda nobis voluptatem, officiis odio libero dicta minima tenetur mollitia fuga
+				sint labore ratione eaque?</p>
+			<p class="error small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta eius ut
+				quas, at voluptate ducimus in assumenda laudantium voluptatibus error modi quidem veritatis quaerat,
+				sapiente obcaecati. Doloribus, soluta veniam.</p>
+			<p class="error large">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptate
+				architecto sapiente. Quas eaque, velit aperiam quisquam error blanditiis totam, asperiores cumque fuga
+				in illum! Ipsa veniam esse delectus labore?</p>
+			<p class="success small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur labore at
+				nesciunt eum accusamus tempora voluptates necessitatibus mollitia, nisi vel unde corporis dolorem
+				doloremque quaerat sequi enim neque ducimus laborum!</p>
+			<p class="biba boba baba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat quaerat
+				laudantium reiciendis ipsum nulla officiis mollitia molestias, voluptate ut ipsam in quas est hic
+				aliquid quidem alias officia facilis.</p>
+
+			<h2>Выбор элемента по уникальному id в CSS</h2>
+			<!-- Кроме классов, можно также выбирать элементы по id, представляющим собой уникальный идентификатор элемента. Под уникальностью понимается то, что если у нас на странице уже есть элемент с таким id, то другого элемента с таким же id быть не должно. -->
+			<div id="elem1">
+				<h2>Title</h2>
+				<p>
+					text
+				</p>
+				<p>
+					text
+				</p>
+			</div>
+			<div id="elem2">
+				<h2>Title</h2>
+				<p>
+					text
+				</p>
+				<p>
+					text
+				</p>
+			</div>
+			<div id="elem3">
+				<h2>Title</h2>
+				<p>
+					text
+				</p>
+				<p>
+					text
+				</p>
+				<!-- Атрибут id используется в том случае, когда необходимо подчеркнуть уникальность элемента. Классы используются тогда, когда предполагается, что таких элементов может быть много, даже если он сейчас один. -->
+			</div>
+
+			<h2>Селектор по id и CSS классы</h2>
+			<div id="block" class="text">
+				<p>text</p>
+				<p>text</p>
+				<p>text</p>
+			</div>
+			<div class="text">
+				<p>text</p>
+				<p>text</p>
+				<p>text</p>
+			</div>
+
+			<h2>Использование id в CSS</h2>
+			<div id="elem">
+				<h2>Choose</h2>
+				<p>---</p>
+
+				<h2>Choose</h2>
+				<p>---</p>
+			</div>
+
+			<h2>Do not +++</h2>
+			<p>---</p>
+
+			<div id="elem">
+				<p class="text">+++</p>
+				<p class="text">+++</p>
+
+				<ul>
+					<li class="text">+++</li>
+					<li class="text">+++</li>
+					<li class="text">+++</li>
+					<li>---</li>
+					<li>---</li>
+				</ul>
+			</div>
+
+			<p class="text">---</p>
+
+			<div id="elem">
+				<p class="text">+++</p>
+				<p class="text">+++</p>
+
+				<ul>
+					<li class="text">---</li>
+					<li class="text">---</li>
+					<li class="text">---</li>
+					<li>---</li>
+					<li>---</li>
+				</ul>
+			</div>
+
+			<p class="text">---</p>
+
+			<div id="elem">
+				<p class="text">---</p>
+				<p class="text">---</p>
+
+				<ul>
+					<li class="text">+++</li>
+					<li class="text">+++</li>
+					<li class="text">+++</li>
+					<li>---</li>
+					<li>---</li>
+				</ul>
+			</div>
+
+			<p class="text">---</p>
+
+			<h2>Выбор элемента по нескольким классам в CSS</h2>
+			<p class="eee">
+				This is a paragraph with text.
+			</p>
+			<p class="zzz">
+				This is a paragraph with text.
+			</p>
+			<p class="ccc">
+				This is a paragraph with text.
+			</p>
+			<p class="eee zzz ccc">
+				This is a paragraph with text.
+			</p>
+
+			<h2>Несколько селекторов слитно в CSS</h2>
+			<h3 class="bbb zzz">Заголовок 1</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt corrupti natus repellat eum
+				omnis odit alias quaerat, praesentium nesciunt tenetur, rem, est sint soluta facilis nobis perspiciatis
+				quod minima.</p>
+			<p class="bbb zzz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita alias fugit similique
+				tempora mollitia iste, obcaecati delectus, vitae ullam voluptatum quo iure. Eveniet voluptatem totam
+				maiores odit est reiciendis aliquam!</p>
+			<h3 id="elem" class="bbb">Заголовок 2</h3>
+			<p id="elem" class="bbb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi facere
+				repellat, vitae id quasi impedit reiciendis omnis deleniti quia repellendus qui, autem illum!
+				Consequuntur eveniet accusamus cupiditate porro dolorem.</p>
+			<p id="elem" class="bbb zzz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi
+				facere repellat, vitae id quasi impedit reiciendis omnis deleniti quia repellendus qui, autem illum!
+				Consequuntur eveniet accusamus cupiditate porro dolorem.</p>
+
+			<h2>Ошибка при использовании несколько CSS селекторов</h2>
+			<h3 class="zzz">Заголовок 1</h3>
+			<h3>Заголовок 2 <i class="zzz">со вложенным селектором класса</i></h3>
+			<p class="bbb zzz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sapiente fugiat iure
+				dolorem est aliquid sequi, error magni voluptatum laudantium cumque repellat qui beatae laborum alias
+				obcaecati ipsum libero numquam.</p>
+			<p class="bbb">Lorem ipsum dolor sit, <i class="zzz">amet consectetur adipisicing elit. Voluptates esse
+					facilis sed quia facere omnis cupiditate corrupti illum</i>, repellat nobis eum, sit dicta sunt ab
+				quis recusandae veritatis in eveniet!</p>
+			<p class="bbb zzz xxx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, delectus tempore?
+				Ea rerum praesentium atque id at blanditiis hic ipsa dolorum tenetur minus? Odit quasi possimus sunt
+				alias impedit accusantium.</p>
+			<p class="bbb">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore id iusto <i
+					class="zzz xxx">nisi iure inventore eaque consequatur unde deleniti quae maiores dolorem aliquam</i>
+				velit, commodi quod atque praesentium! Odio, fugit nostrum.</p>
+			<p class="bbb zzz">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, nisi odit <b
+					class="xxx">voluptate aperiam id libero nesciunt tempora et pariatur saepe ad suscipit placeat
+					alias</b> ipsum repellat quidem, quos dolore quas.</p>
+			<p class="bbb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b class="zzz">Nihil, nisi odit <i
+						class="xxx">voluptate aperiam id libero nesciunt tempora et pariatur saepe</i> ad suscipit
+					placeat</b> alias ipsum repellat quidem, quos dolore quas.</p>
+			<p id="elem" class="bbb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat explicabo culpa,
+				ut consectetur laborum voluptate dicta dolorum hic distinctio omnis dolore, ex in eos animi expedita
+				recusandae provident saepe quisquam.</p>
+			<p id="elem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusantium autem ut mollitia est
+				<b class="bbb">dignissimos architecto, possimus sed? Nulla impedit at quos.</b> Alias cum omnis
+				recusandae nisi, libero optio cumque?
+			</p>
+
+			<h2>Практика на комбинации селекторов</h2>
+			<ul>
+
+				<li><a href="1.html">Задание №1</a></li>
+				<li><a href="2.html">Задание №2</a></li>
+				<li><a href="3.html">Задание №3</a></li>
+				<li><a href="4.html">Задание №4</a></li>
+				<li><a href="5.html">Задание №5</a></li>
+				<li><a href="6.html">Задание №6</a></li>
+				<li><a href="7.html">Задание №7</a></li>
+				<li><a href="8.html">Задание №8</a></li>
+				<li><a href="9.html">Задание №9</a></li>
+				<li><a href="10.html">Задание №10</a></li>
+				<li><a href="11.html">Задание №11</a></li>
+				<li><a href="12.html">Задание №12</a></li>
+				<li><a href="13.html">Задание №13</a></li>
+				<li><a href="14.html">Задание №14</a></li>
+				<li><a href="15.html">Задание №15</a></li>
+				<li><a href="16.html">Задание №16</a></li>
+				<li><a href="17.html">Задание №17</a></li>
+			</ul>
+
+			<h2>Правила специфичности в CSS</h2>
+			<ol>
+				<li>Класс всегда побеждает селектор тега</li>
+				<li>Идентификатор всегда побеждает класс</li>
+				<li>При равных условиях побеждает тот селектор, у которого больше частей. Например, если у нас два
+					селектора тегов, то победит тот, у которого тегов больше</li>
+			</ol>
+
+			<h2>Приоритет селекторов потомков в CSS</h2>
+			<p>Если родителю задан, например, цвет, то этот цвет будет наследоваться потомком. Но, если потомку также
+				задан цвет, то селектор потомка будет иметь больший приоритет, чем селектор родителя. Это значит, что
+				<b>селектор тега потомка побеждает класс и идентификатор родителя.</b>
+			</p>
+
+			<h2>Соседний селектор в CSS</h2>
+			<p>Соседний селектор + позволяет выбрать элемент по его соседу сверху.</p>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li id="elem">5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul>
+				<li>1</li>
+				<li class="elem">2</li>
+				<li>3</li>
+				<li>4</li>
+				<li class="elem">5</li>
+				<li>6</li>
+				<li>7</li>
+				<li class="elem">8</li>
+				<li>9</li>
+			</ul>
+
+			<h2>Родственный селектор в CSS</h2>
+			<p>Родственный селектор ~ позволяет выбрать все элементы, находящиеся после заданного элемента внутри одного
+				родителя.</p>
+
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li id="elem2">5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<h2>Универсальный селектор в CSS</h2>
+			<p>Универсальный селектор * позволяет выбирать все элементы.</p>
+			<main>
+				<p>---</p>
+				<p>---</p>
+
+				<div>
+					<p>+++</p>
+					<p>+++</p>
+				</div>
+				<section>
+					<p>+++</p>
+					<p>+++</p>
+				</section>
+			</main>
+
+			<h2>Селектор по имени атрибута</h2>
+			<p>Селектор по имени атрибута задает стиль элементу, у которого есть только указанный <b>атрибут тега.</b>
+			</p>
+
+			<h2>Селектор по значению атрибута</h2>
+			<p>Селектор по значению атрибута позволяет выбрать элементы по наличию у них определенного атрибута или его
+				значения и применить к ним нужный стиль.</p>
+
+			<h2>Селектор по началу значения атрибута</h2>
+			<p>Селектор по началу значения атрибута применяет стиль к элементу, у которого значение атрибута тега
+				начинается с определенного текста.</p>
+
+			<h2>Селектор по концу значения атрибута</h2>
+			<p>Селектор по концу значения атрибута применяет стиль к элементу, у которого значение атрибута тега
+				заканчивается на определенный текст.</p>
+
+			<h2>Селектор атрибута по тексту</h2>
+			<p>Селектор атрибута по тексту применяет стиль к элементу, у которого значение атрибута тега содержит
+				определенный текст.</p>
+
+			<h2>Селектор по одному из значений атрибута</h2>
+			<p>Селектор по одному из значений атрибута задает стиль элементу, у которого в атрибуте есть хотя бы одно из
+				указанных значений. При этом все значения атрибута должны быть разделены пробелом.</p>
+
+			<h2>Селектор атрибута по дефису в значении</h2>
+			<p>Селектор атрибута по дефису в значении применяет стиль к элементу, значения атрибута которого разделены
+				дефисом.</p>
+
+			<h2>Состояния ссылок в CSS</h2>
+			<p>Посещая в интернете различные сайты, вы обращали внимание на то, что ссылки реагируют на наведение на них
+				мышки. <b>Псевдокласс в CSS</b> — это ключевое слово, добавленное к селектору, которое определяет его
+				особое состояние. </p>
+			<ul>
+				<li><b>:hover</b> - мы поймаем состояние, когда на ссылку навели курсор мышки. В этот момент мы можем, к
+					примеру, поменять цвет ссылки или убрать/добавить ей подчеркивание.</li>
+				<li><b>:link</b> - отлавливает не посещенную ссылку.</li>
+				<li><b>:visited</b> - отлавливает посещенную ссылку.</li>
+				<li><b>:active</b> - отлавливает следующее состояние: <i>на элемент нажали мышкой, но еще не
+						отпустили.</i></li>
+			</ul>
+
+			<h2>Нюансы последовательности состояния ссылок в CSS</h2>
+			<p>Псевдоклассы ссылок наследуют друг от друга. К примеру, если я уберу подчеркивание для состояния :link,
+				то оно уберется для всех состояний.</p>
+			<p>Из-за наследования для корректной работы данные псевдоклассы следует размещать именно в таком порядке,
+				как в примере: <i>:link, :visited, :hover, :active (ненужные можно не писать)</i>. Этот порядок
+				подчиняется следующему мнемоническому правилу: <b>LoVe HAte</b>.</p>
+
+			<ul>
+				<li><a href="#">Ссылка 1</a></li>
+				<li><a href="#">Ссылка 2</a></li>
+				<li><a href="#">Ссылка 3</a></li>
+				<li><a href="#">Ссылка 4</a></li>
+				<li><a href="#">Ссылка 5</a></li>
+			</ul>
+
+			<h2>Сложные селекторы с состояниями ссылок в CSS</h2>
+			<div id="test">
+				<ul>
+					<li>
+						<a href="#">Задание №1</a>
+					</li>
+				</ul>
+			</div>
+
+			<h2>Ссылка с классом в CSS</h2>
+			<ul>
+				<li><a href="#" class="zzz">Задание №1</a></li>
+				<li id="block"><a href="#" class="zzz">Задание №2</a></li>
+				<li class="block"><a href="#" class="zzz">Задание №3</a></li>
+			</ul>
+
+			<h2>Псевдокласс first-child</h2>
+			<p>Псевдокласс first-child выбирает элемент, который является первым потомком родителя.</p>
+
+			<h2>Псевдокласс last-child</h2>
+			<p>Псевдокласс last-child выбирает элемент, который является последним потомком родителя.</p>
+
+			<h2>Выборка концевых элементов в CSS</h2>
+			<ul class="qwe">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<ul class="qwe">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<ul class="rty">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<ul class="rty">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<ul class="uio">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<ul class="uio">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<h2>Псевдокласс nth-child</h2>
+			<p>Псевдокласс nth-child выбирает элемент, который является n-ным потомком родителя.</p>
+			<p><b>Синтаксис:</b> селектор:nth-child(число | odd | even | выражение) { ... }</p>
+			<ul>
+				<li><b>число</b> - положительное число начиная с 1. Задает номер элемента, к которому мы хотим
+					обратиться. Нумерация элементов начинается с 1.</li>
+				<li><b>odd</b> - нечетные элементы</li>
+				<li><b>even</b> - четные элементы</li>
+				<li><b>выражение</b> - можно составлять специальные выражения с буквой n, которая обозначает все целые
+					числа от нуля (не от единицы) до бесконечности. Так, 2n - значит все четные числа (начиная со
+					второго). Как это понять? Подставляем в n последовательно числа от 0 и так далее: если n = 0, то 2n
+					даст 0 - такого элемента нет (нумерация элементов с 1), если n = 1, то 2n даст 2 - второй элемент,
+					если n = 2, 2n дает 4 - четвертый элемент. Если написать 3n - это будет каждый третий элемент
+					(начиная с третьего), и так далее.</li>
+			</ul>
+
+			<h2>Псевдокласс nth-last-child</h2>
+			<p>Псевдокласс nth-last-child выбирает элемент, который является n-ным потомком родителя, отсчитывая с
+				конца. Ведет себя аналогично nth-child, только отсчет ведется с конца.</p>
+			<p><b>Синтаксис:</b> селектор:nth-last-child(число | odd | even | выражение) { ... }</p>
+			<ul>
+				<li><b>число</b> - положительное число начиная с 1. Задает номер элемента, к которому мы хотим
+					обратиться. Нумерация элементов начинается с 1.</li>
+				<li><b>odd</b> - нечетные элементы</li>
+				<li><b>even</b> - четные элементы</li>
+				<li><b>выражение</b> - можно составлять специальные выражения с буквой n, которая обозначает все целые
+					числа от нуля (не от единицы) до бесконечности. Так, 2n - значит все четные числа (начиная со
+					второго). Как это понять? Подставляем в n последовательно числа от 0 и так далее: если n = 0, то 2n
+					даст 0 - такого элемента нет (нумерация элементов с 1), если n = 1, то 2n даст 2 - второй элемент,
+					если n = 2, 2n дает 4 - четвертый элемент. Если написать 3n - это будет каждый третий элемент
+					(начиная с третьего), и так далее.</li>
+			</ul>
+
+			<h2>Выборка по позиции элементов в CSS</h2>
+			<ul class="asd">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="asd">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="efg">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="efg">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="gfe">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="dfg">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<ul class="dfg">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+			</ul>
+
+			<h2>Псевдокласс only-child</h2>
+			<p>Псевдокласс only-child выбирает элемент, который является единственным потомком родителя.</p>
+			<p><b>Синтаксис:</b> селектор:only-child { ... }</p>
+
+			<h2>Выборка единственного потомка в CSS</h2>
+
+			<ul class="fgd">
+				<li>1</li>
+			</ul>
+
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+
+			<h2>Псевдокласс empty</h2>
+			<p>Псевдокласс empty задает то, как будет выглядеть пустой элемент (не содержащий текста).</p>
+			<p><b>Синтаксис:</b> селектор:empty { ... }</p>
+
+			<h2>Выборка пустых элементов в CSS</h2>
+
+			<ul class="ghj">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li></li>
+			</ul>
+
+			<h2>Псевдокласс first-of-type</h2>
+			<p>Псевдокласс first-of-type выбирает элемент, который является первым потомком родителя заданного типа. То
+				есть, если написать h2:first-of-type - найдется первый h2 в родителе (в отличии от first-child, который
+				найдет только тот h2, который стоит самым первым в родителе).</p>
+			<p><b>Синтаксис:</b> селектор:first-of-type { ... }</p>
+
+			<h2>Псевдокласс last-of-type</h2>
+			<p>Псевдокласс last-of-type выбирает элемент, который является последним потомком родителя заданного типа.
+				То есть, если я напишу h2:last-of-type - найдется последний h2 в родителе (в отличии от last-child,
+				который найдет только тот h2, который стоит самым последним в родителе).</p>
+			<p><b>Синтаксис:</b> селектор:last-of-type { ... }</p>
+
+			<h2>Псевдокласс nth-of-type</h2>
+			<p>Псевдокласс nth-of-type выбирает элемент, который является n-ным потомком заданного типа. То есть, если я
+				напишу h2:nth-of-type(4) - найдется 4-тый h2 в родителе (в отличии от nth-child, который найдет только
+				тот h2, который является 4-тым элементов в родителе).</p>
+			<p><b>Синтаксис:</b> селектор:nth-of-type(число | odd | even | выражение) { ... }</p>
+			<ul>
+				<li><b>число</b> - положительное число начиная с 1. Задает номер элемента, к которому мы хотим
+					обратиться. Нумерация элементов начинается с 1.</li>
+				<li><b>odd</b> - нечетные элементы</li>
+				<li><b>even</b> - четные элементы</li>
+				<li><b>выражение</b> - можно составлять специальные выражения с буквой n, которая обозначает все целые
+					числа от нуля (не от единицы) до бесконечности. Так, 2n - значит все четные числа (начиная со
+					второго). Как это понять? Подставляем в n последовательно числа от 0 и так далее: если n = 0, то 2n
+					даст 0 - такого элемента нет (нумерация элементов с 1), если n = 1, то 2n даст 2 - второй элемент,
+					если n = 2, 2n дает 4 - четвертый элемент. Если написать 3n - это будет каждый третий элемент
+					(начиная с третьего), и так далее.</li>
+			</ul>
+
+			<h2>Псевдокласс nth-last-of-type</h2>
+			<p>Псевдокласс nth-last-of-type выбирает элемент, который является n-ным потомком родителя заданного типа,
+				отсчитывая с конца. Ведет себя аналогично nth-of-type, только отсчет ведется с конца.</p>
+			<p><b>Синтаксис:</b> селектор:nth-last-of-type(число | odd | even | выражение) { ... }</p>
+			<ul>
+				<li><b>число</b> - положительное число начиная с 1. Задает номер элемента, к которому мы хотим
+					обратиться. Нумерация элементов начинается с 1.</li>
+				<li><b>odd</b> - нечетные элементы</li>
+				<li><b>even</b> - четные элементы</li>
+				<li><b>выражение</b> - можно составлять специальные выражения с буквой n, которая обозначает все целые
+					числа от нуля (не от единицы) до бесконечности. Так, 2n - значит все четные числа (начиная со
+					второго). Как это понять? Подставляем в n последовательно числа от 0 и так далее: если n = 0, то 2n
+					даст 0 - такого элемента нет (нумерация элементов с 1), если n = 1, то 2n даст 2 - второй элемент,
+					если n = 2, 2n дает 4 - четвертый элемент. Если написать 3n - это будет каждый третий элемент
+					(начиная с третьего), и так далее.</li>
+			</ul>
+
+			<h2>Псевдокласс only-of-type</h2>
+			<p>Псевдокласс only-of-type выбирает элемент, который является единственным потомком заданного типа.</p>
+			<p><b>Синтаксис:</b> селектор:only-of-type { ... }</p>
+
+			<h2>Выборка по позиции и типу элементов в CSS</h2>
+
+			<div class="container">
+  <h2>Заголовок 1</h2>
+  <p>Абзац 1</p>
+  <p>Абзац 2</p>
+  <h2>Заголовок 2</h2>
+  <p>Абзац 3</p>
+  <h2>Заголовок 3</h2>
+  <p>Абзац 4</p>
+  <h2>Заголовок 4</h2>
+</div>
+
+<h2>Псевдокласс not</h2>
+<p>Псевдокласс not задает отрицание, к примеру, p:not(.last) означает выбрать все абзацы, у которых нет класса last. Вложенные not не работают.</p>
+<p><b>Синтаксис:</b> селектор:not(отрицание) { ... }</p>
+
+<h2>Селектор отрицания в CSS</h2>
+
+<ul class ="jkl">
+	<li>1</li>
+	<li class="elem">2</li>
+	<li>3</li>
+	<li>4</li>
+	<li class="elem">5</li>
+	<li>6</li>
+	<li>7</li>
+	<li class="elem">8</li>
+	<li>9</li>
+</ul>
+
+<ul class ="klj">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+</ul>
+
+<ul class="jlk">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+</ul>
+
+</body>
+
+</html>
