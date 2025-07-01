@@ -1,0 +1,7 @@
+/* Styles for file 12.html */
+
+
+#block p.bbb,
+#block p.xxx {
+    color: green;
+}

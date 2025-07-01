@@ -1,0 +1,708 @@
+/* h1, h2, h3 {
+    text-align: center;
+} */
+
+/* h1, h2, h3 {
+    text-align: center;
+}
+h2 {
+    color: blue;
+}
+h3 {
+    font-size: 16px;
+    color: red;
+} */
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: red;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+ul li i {
+    color: red;
+}
+
+p i {
+    color: green;
+}
+
+p b i {
+    color: red;
+}
+
+li>b {
+    color: orange;
+}
+
+/* > дочерний селектор. Чтобы понять, как им пользоваться, давайте сравним его с селектором потомков. Вот так: p i - мы выберем все курсивы внутри абзацев, а вот так: p > i - только курсивы, являющиеся непосредственными потомками абзацев.*/
+
+/* На странице, однако, могут быть абзацы разных типов, к которым нужно применять разные стили. Для решения такой проблемы можно разные абзацы отнести к разным CSS классам.
+
+Чтобы отнести тег какому-нибудь классу, нужно этому тегу написать атрибут class, а в нем - придуманное вами название класса, состоящее из букв, цифр, символов подчеркивания и дефиса.*/
+
+.odd {
+    color: red;
+}
+
+.eve {
+    color: green;
+}
+
+.eee {
+    color: red;
+}
+
+.xxx {
+    font-size: 30px;
+}
+
+.block1 {
+    color: red;
+}
+
+.block2 {
+    color: green;
+}
+
+.block3 {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+/* .eee, .zzz {
+    font-family: Arial;
+    line-height: 1.5;
+}
+.eee {
+    font-size: 20px;
+}
+.zzz {
+    font-size: 30px;
+} */
+
+/* .eee, .zzz, .ggg {
+text-align: center;
+font-family: Arial;
+}
+.eee {
+    font-size: 20px;
+}
+.zzz {
+    font-size: 30px;
+}
+.ggg {
+    font-size: 35px;
+} */
+
+/* Тег с заданным классом в CSS */
+.header {
+    color: orange;
+}
+
+h2.header {
+    font-size: 40px;
+}
+
+h3.header {
+    font-size: 30px;
+}
+
+.eee i {
+    color: green;
+}
+
+.eee .bbb {
+    color: orange;
+}
+
+.eee h3 {
+    color: green;
+}
+
+.eee h3.bbb {
+    color: red;
+}
+
+.eee p.ccc {
+    color: blue;
+}
+
+.eee .bbb .kkk {
+    color: red;
+}
+
+/* Итак, еще раз: p.eee - такой селектор выбирает абзацы с классом eee. А вот если я сделаю так: p .eee, то выберу все элементы с классом eee, находящиеся внутри абзацев. Прочувствуйте эту разницу. */
+
+p.fff {
+    color: purple;
+}
+
+p .fff {
+    color: black;
+}
+
+.eee p.fff {
+    color: pink;
+}
+
+.eee p .rrr {
+    color: blue;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.large {
+    font-size: 30px;
+}
+
+.small {
+    font-size: 20px;
+}
+
+.biba {
+    color: blueviolet;
+}
+
+.boba {
+    font-size: 20px;
+}
+
+.baba {
+    font-style: italic;
+}
+
+/* Чтобы обратиться к элементу с заданным id, нужно написать символ # и придуманное нами имя. */
+#elem1 {
+    color: red;
+}
+
+#elem2 {
+    color: green;
+}
+
+#elem3 {
+    color: blue;
+}
+
+#block {
+    color: purple;
+}
+
+.text {
+    font-weight: bold;
+}
+
+/* При использовании id доступны все манипуляции с селекторами, которые мы изучили в предыдущих уроках. */
+#elem h2 {
+    color: green;
+}
+
+#elem .text {
+    color: green;
+}
+
+#elem .text {
+    color: green;
+}
+
+#elem li.text {
+    color: green;
+}
+
+.eee.zzz.ccc {
+    font-style: italic;
+}
+
+/* Чтобы выбрать элемент, одновременно подпадающий под несколько селекторов, нужно написать эти селекторы слитно, без пробела. */
+.bbb.zzz {
+    color: orange;
+}
+
+h3.bbb.zzz {
+    color: blue;
+}
+
+#elem.bbb {
+    color: black;
+}
+
+#elem.bbb.zzz {
+    color: purple;
+}
+
+h3#elem.bbb {
+    color: green;
+}
+
+/* Напоминаю, про ошибку новичков: селектор .bbb.zzz и селектор .bbb .zzz делают разные вещи. Первый ищет элемент, имеющий одновременно два класса, а второй - ищет элемент с классом zzz, находящийся внутри класса bbb. */
+h3.zzz {
+    color: black;
+}
+
+h3 .zzz {
+    color: blue;
+}
+
+.bbb.zzz {
+    color: orange;
+}
+
+.bbb .zzz {
+    color: red;
+}
+
+.bbb.zzz.xxx {
+    color: blue;
+}
+
+.bbb .zzz.xxx {
+    color: yellow;
+}
+
+.bbb.zzz .xxx {
+    color: black;
+}
+
+.bbb .zzz .xxx {
+    color: pink;
+}
+
+#elem.bbb {
+    color: blue;
+}
+
+#elem .bbb {
+    color: green;
+}
+
+/*
+#block h1, #block h2 {
+    text-align: center
+}
+
+#block h1, block h2 {
+    text-align: center;
+}
+#block h1 {
+    font-size: 30px;
+}
+#block h2 {
+    font-size: 20px;
+}
+*/
+
+/*
+#block h1,
+#block h2,
+#block h3 {
+    text-align: center;
+}
+
+#block h2 {
+    color: blue;
+}
+
+#block h3 {
+    font-size: 16px;
+    color: red;
+}
+
+#block h1.eee,
+#block h2.zzz {
+    text-align: center;
+}
+
+#block h1.eee {
+    font-size: 30px;
+}
+
+#block h2.zzz {
+    font-size: 20px;
+}
+
+.xxx .kkk,
+.eee h2.zzz,
+#eee h2 {
+    text-align: center;
+}
+
+.eee h2.zzz,
+.xxx {
+    text-align: center;
+}
+*/
+
+div p {
+    color: black;
+}
+
+/* Правила специфичности в CSS
+
+Правило первое
+Класс всегда побеждает селектор тега:
+
+<p class="text">text</p>
+p {
+	color: red;
+}
+.text {
+	color: green; //применится этот цвет
+} 
+    
+Правило второе
+Идентификатор всегда побеждает класс:
+
+<p id="elem" class="text">text</p>
+.text {
+	color: red;
+}
+#elem {
+	color: green; //применится этот цвет
+}
+
+Правило третье
+При равных условиях побеждает тот селектор, у которого больше частей. Например, если у нас два селектора тегов, то победит тот, у которого тегов больше:
+
+<div>
+	<p>text</p>
+</div>
+p {
+	color: red;
+}
+div p {
+	color: green; //рименится этот цвет
+}
+
+Если два селектора классов, то победит тот, в котором указано больше классов (если там будут селекторы тегов, то они не влияют):
+
+<div class="block">
+	<p class="text">text</p>
+</div>
+.text {
+	color: red;
+}
+.block .text {
+	color: green; //применится этот цвет
+}
+*/
+
+/* Приоритет селекторов потомков в CSS
+
+Если родителю задан, например, цвет, то этот цвет будет наследоваться потомком. Но, если потомку также задан цвет, то селектор потомка будет иметь больший приоритет, чем селектор родителя. Это значит, что <b>селектор тега потомка побеждает класс и идентификатор родителя.
+
+<div class="block">
+	<p>text</p>
+</div>
+.block {
+	color: red;
+}
+p {
+	color: green; //применится этот цвет
+}
+
+<div id="block">
+	<p class="text">text</p>
+</div>
+#block {
+	color: red;
+}
+.text {
+	color: green; //применится этот цвет
+}
+*/
+
+#elem+li {
+    color: green;
+}
+
+.elem+li {
+    color: green;
+}
+
+/* Родственный селектор в CSS
+
+Родственный селектор ~ позволяет выбрать все элементы, находящиеся после заданного элемента внутри одного родителя. */
+
+#elem2~li {
+    color: green;
+}
+
+/* Универсальный селектор в CSS
+
+Универсальный селектор * позволяет выбирать все элементы. */
+
+main * p {
+    color: green;
+}
+
+/* Селектор по имени атрибута
+
+Селектор по имени атрибута задает стиль элементу, у которого есть только указанный атрибут тега.
+
+input[type] {
+	background-color: #C2DDFD;
+} */
+
+/* Селектор по значению атрибута
+
+Селектор по значению атрибута позволяет выбрать элементы по наличию у них определенного атрибута или его значения и применить к ним нужный стиль.
+
+input[type="text"] {
+	background-color: #C2DDFD;
+}*/
+
+/* Селектор по началу значения атрибута
+
+Селектор по началу значения атрибута применяет стиль к элементу, у которого значение атрибута тега начинается с определенного текста.
+
+a[href^="https://"] {
+	color: red;
+} */
+
+/* Селектор по концу значения атрибута
+
+Селектор по концу значения атрибута применяет стиль к элементу, у которого значение атрибута тега заканчивается на определенный текст.
+
+a[href$=".html"] {
+	color: red;
+} */
+
+/* Селектор атрибута по тексту
+
+Селектор атрибута по тексту применяет стиль к элементу, у которого значение атрибута тега содержит определенный текст.
+
+a[href*="test"] {
+	color: green;
+} */
+
+/* Селектор по одному из значений атрибута
+
+Селектор по одному из значений атрибута задает стиль элементу, у которого в атрибуте есть хотя бы одно из указанных значений. При этом все значения атрибута должны быть разделены пробелом.
+
+p[class~="test"] {
+	color: blue;
+} */
+
+/* Селектор атрибута по дефису в значении
+
+Селектор атрибута по дефису в значении применяет стиль к элементу, значения атрибута которого разделены дефисом.
+
+p[class|="text"] {
+	color: red;
+} */
+
+/*
+[title] {
+    color: green;
+}
+
+p[title] {
+    color: green;
+}
+
+p[title="hello"] {
+    color: green
+}
+
+a[href^="http://"] {
+    color: green;
+}
+
+a[href$=".html"] {
+    color: green
+}
+
+p[title*="hello"] {
+    color: green;
+}
+
+p[class^="top-"] {
+    color: green;
+}
+*/
+
+/* Состояния ссылок в CSS */
+
+/*
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+ a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: black;
+} 
+*/
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Сложные селекторы с состояниями ссылок в CSS */
+
+#test a {
+    color: red;
+}
+
+#test a:hover {
+    text-decoration: none;
+}
+
+/* Ссылка с классом в CSS */
+
+a.zzz {
+    color: orange;
+}
+
+a.zzz:hover {
+    text-decoration: none;
+}
+
+#block a.zzz {
+    color: purple;
+}
+
+#block a.zzz:hover {
+    text-decoration: none;
+}
+
+.block a.zzz {
+    color: pink;
+}
+
+.block a.zzz:hover {
+    text-decoration: none;
+}
+
+/* Выборка концевых элементов в CSS */
+
+.qwe li:first-child {
+    /* Псевдокласс first-child выбирает элемент, который является первым потомком родителя. */
+    color: green;
+}
+
+.rty li:last-child {
+    /* Псевдокласс first-child выбирает элемент, который является первым потомком родителя. */
+    color: green;
+}
+
+.uio li:first-child {
+    color: orange;
+}
+
+.uio li:last-child {
+    color: purple;
+}
+
+/* Псевдокласс nth-child
+
+Псевдокласс nth-child выбирает элемент, который является n-ным потомком родителя. 
+
+/* Псевдокласс nth-last-child
+
+Псевдокласс nth-last-child выбирает элемент, который является n-ным потомком родителя, отсчитывая с конца. Ведет себя аналогично nth-child, только отсчет ведется с конца. */
+
+/* Выборка по позиции элементов в CSS */
+
+.asd li:nth-child(3) {
+    color: green;
+}
+
+.efg li:nth-child(even) {
+    color: green;
+}
+
+.efg li:nth-child(odd) {
+    color: black;
+}
+
+.gfe li:nth-child(3n) {
+    color: green;
+}
+
+.dfg li:nth-last-child(2) {
+    color: green;
+}
+
+.fgd li:only-child {
+    color: green;
+}
+
+.ghj li {
+    border: 1px solid red;
+	color: black;
+	width: 100px;
+    margin: 10px;
+}
+
+.ghj li:empty {
+    border: 1px solid blue;
+}
+
+/* Выборка по позиции и типу элементов в CSS */
+
+.container p:first-of-type {
+  background-color: yellow;
+}
+
+.container p:last-of-type {
+  background-color: lightcoral;
+}
+
+.container p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.container p:nth-last-of-type(2) {
+  text-decoration: underline;
+}
+
+.container h2:only-of-type {
+  color: red;
+}
+
+/* Селектор отрицания в CSS */
+
+.jkl li:not(.elem) {
+    color: green;
+}
+
+.klj li:not(:first-child) {
+    color: green;
+}
+
+.jlk li:not(:first-child):not(:last-child) {
+    color: green;
+}
