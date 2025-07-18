@@ -1,0 +1,474 @@
+h1 {
+    color: red;
+}
+
+p,
+ul,
+ol {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/* Установка фонового цвета в CSS */
+
+.aaa {
+    background-color: blue;
+    color: white;
+}
+
+/* Сплошная граница в CSS */
+
+.bbb {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+/* Точечная граница в CSS */
+
+.ccc {
+    border-width: 5px;
+    border-style: dotted;
+    border-color: red;
+    width: 300px;
+    height: 150px;
+}
+
+/* Граница в виде тире в CSS */
+
+.ddd {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: orange;
+    width: 100px;
+    height: 200px;
+}
+
+/* Выпуклая граница в CSS */
+
+.fff {
+    border-width: 5px;
+    border-style: ridge;
+    border-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+/* Двойная граница в CSS */
+
+.ggg {
+    border-width: 5px;
+    border-style: double;
+    border-color: green;
+    width: 300px;
+    height: 150px;
+}
+
+/* Свойство-сокращение для границы в CSS */
+
+.one {
+    border: 1px solid red;
+    width: 300px;
+    height: 150px;
+}
+
+.two {
+    border: 1px dotted blue;
+    width: 300px;
+    height: 150px;
+}
+
+.three {
+    border: 3px dashed green;
+    width: 300px;
+    height: 150px;
+}
+
+.four {
+    border: 3px double orange;
+    width: 300px;
+    height: 150px;
+}
+
+/* Граница для отдельных сторон в CSS */
+
+.five {
+    border-left: 3px ridge orange;
+    border-top: 3px ridge blue;
+    border-right: 3px ridge green;
+    border-bottom: 3px ridge red;
+    width: 300px;
+    height: 200px;
+}
+
+.six {
+    border-left: 3px solid red;
+    border-top: 1px solid blue;
+    border-right: 3px dotted green;
+    border-bottom: 1px solid blue;
+    width: 300px;
+    height: 200px;
+
+}
+
+/* Скругление границ блока в CSS */
+
+.hhh {
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Скругление границ фона в CSS */
+
+.jjj {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+}
+
+/* Создание круга в CSS */
+
+.kkk {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 1px solid palevioletred;
+}
+
+/* Разные скругления для разных углов CSS */
+
+/* Четыре значения скругления для разных углов CSS */
+
+.lll {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 10px 20px 35px 50px;
+}
+
+/* Два значения скругления для разных углов CSS */
+
+.zzz {
+    width: 150px;
+    height: 150px;
+    border: 1px solid orange;
+    border-radius: 10px 30px;
+}
+
+/* Три значения скругления для разных углов в CSS */
+
+.xxx {
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+    border-radius: 10px 30px 20px;
+}
+
+/* Скругленные уголки в процентах в CSS */
+
+.nnn {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 10%;
+}
+
+/* Создание круга при скруглении в процентах в CSS */
+
+.vvv {
+    width: 150px;
+    height: 150px;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+
+/* Свойство background-attachment */
+
+/* Свойство background-color */
+
+/* Свойство background-image */
+
+.background-image {
+    background-image: url("image.jpg");
+    width: 150px;
+    height: 150px;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 5px;
+}
+
+/* Свойство background-position */
+
+.background-position {
+    display: flex; /* Расположить дочерние элементы в ряд */
+    gap: 10px; /* Расстояние между блоками */
+    padding: 5px;
+}
+
+.position1 {
+    width: 150px;
+	height: 150px;
+    background-position-x: left;
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+    border: 2px solid black;
+    background-size: 50%;
+}
+
+.position2 {
+    width: 150px;
+	height: 150px;
+    background-position-x: center;
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+    border: 2px solid black;
+    background-size: 50%;
+}
+
+.position3 {
+    width: 150px;
+	height: 150px;
+    background-position-x: right;
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+    border: 2px solid black;
+    background-size: 50%;
+}
+
+/* Свойство background-repeat */
+
+.background-repeat {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.repeat1 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.repeat2 {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: repeat-x;
+    background-size: 30%;
+}
+
+.repeat3 {
+    width: 150px;
+    height: 300px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: repeat-y;
+    background-size: 50%;
+}
+
+.repeat4 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.repeat5 {
+    width: 150px;
+    height: 250px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: space;
+    background-size: 50%;
+}
+
+.repeat6 {
+    width: 400px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: round;
+    background-size: 30%;
+}
+
+/* Свойство background-size */
+
+.background-size {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.size1 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.size2 {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.size3 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Свойство background-origin */
+
+.background-origin {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.origin1 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed red;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    padding: 20px;
+}
+
+.origin2 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed red;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    padding: 20px;
+}
+
+.origin3 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed red;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 20px;
+}
+
+/* Свойство background-clip */
+
+.background-clip {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.clip1 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed black;
+    background-color: white;
+    background-clip: border-box;
+    padding: 20px;
+}
+
+.clip2 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed blue;
+    background-color: red;
+    background-clip: padding-box;
+    padding: 20px;
+}
+
+.clip3 {
+    width: 150px;
+    height: 150px;
+    border: 5px dashed green;
+    background-color: yellow;
+    background-clip: content-box;
+    padding: 20px;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+/* Работа с маркерами списков ul в CSS */
+
+/* Квадратные маркеры списков ul в CSS */
+
+.square {
+    list-style-type: square;
+}
+
+/* Маркеры списков ul в виде кружков в CSS */
+
+.circle {
+    list-style-type: circle;
+}
+
+/* Отсутствие маркеров списков ul в CSS */
+
+.none {
+    list-style-type: none;
+}
+
+/* Работа с маркерами списков ol в CSS */
+
+/* Строчные римские цифры для списков ol в CSS */
+
+.upper-roman {
+    list-style-type: upper-roman;
+}
+
+/* Строчные латинские буквы для списков ol в CSS */
+
+.lower-alpha {
+    list-style-type: lower-alpha;
+}
+
+/* Заглавные латинские буквы для списков ol в CSS */
+
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+
+/* Строчные греческие буквы для списков ol в CSS */
+
+.lower-greek {
+    list-style-type: lower-greek;
+}
+
+/* Числа с нулем впереди для списков ol в CSS */
+
+.decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
