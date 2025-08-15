@@ -1,0 +1,753 @@
+h1 {
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/* Работа с отступами margin в CSS */
+
+.aaa1 {
+    width: 250px;
+    border: 2px dotted blue;
+    margin-bottom: 15px;
+}
+
+.aaa2 {
+    height: 150px;
+    border: 2px solid orange;
+    margin: 30px; 
+}
+
+.aaa3 {
+    width: 250px;
+    border: 2px dotted blue;
+}
+
+.aaa4 {
+    height: 150px;
+    border: 2px dotted green;
+    margin: 20px;
+}
+
+.aaa5 {
+    height: 105px;
+    border: 2px solid red;
+    margin: 20px;
+}
+
+/* Отступы margin для разных сторон в CSS */
+
+.bbb1 {
+    width: 200px;
+    border: 2px solid red;
+    margin-bottom: 15px;
+}
+
+.bbb2 {
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.bbb3 {
+    width: 200px;
+    border: 2px solid red;
+    margin-bottom: 15px;
+}
+
+.bbb4 {
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.bbb5 {
+    width: 200px;
+    border: 2px solid red;
+}
+
+.bbb6 {
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px; 
+}
+
+/* Несколько значений в свойстве margin в CSS */
+
+/* Четыре значения в свойстве margin в CSS */
+
+.ccc1 {
+    width: 200px;
+    border: 2px solid orange;
+    margin-bottom: 15px;
+}
+
+.ccc2 {
+    height: 50px;
+    border: 2px dashed blue;
+    margin: 25px 50px 100px 10px;
+}
+
+/* Два значения в свойстве margin в CSS */
+
+.ddd1 {
+    width: 200px;
+    border: 2px solid orange;
+    margin-bottom: 15px;
+}
+
+.ddd2 {
+    height: 50px;
+    border: 2px dashed blue;
+    margin: 100px 50px;
+}
+
+.ddd3 {
+    width: 200px;
+    border: 2px solid orange;
+}
+
+.ddd4 {
+    height: 50px;
+    border: 2px dashed blue;
+    margin: 25px 50px;
+}
+
+/* Три значения в свойстве margin в CSS */
+
+.eee1 {
+    width: 200px;
+    border: 2px solid orange;
+    margin-bottom: 15px;
+}
+
+.eee2 {
+    height: 50px;
+    border: 2px dashed blue;
+    margin: 100px 50px 35px;
+}
+
+.eee3 {
+    width: 400px;
+    border: 2px solid orange;
+}
+
+.eee4 {
+    height: 50px;
+    border: 2px dashed blue;
+    margin: 30px 100px 50px;
+}
+
+/* Работа с отступами padding в CSS */
+
+.fff1 {
+    padding: 50px;
+    width: 200px;
+    height: 235px;
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.fff2 {
+    padding: 20px;
+    width: 500px;
+    height: 90px;
+    border: 1px solid green;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.fff3 {
+    padding: 10px;
+    width: 300px;
+    height: 160px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+/* Отступы padding для разных сторон в CSS */
+
+.ggg {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    width: 200px;
+    height: 280px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+/* Несколько значений в свойстве padding в CSS */
+
+.jjj1 {
+    padding: 10px 20px 40px 40px;
+    width: 300px;
+    height: 160px;
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.jjj2 {
+    padding: 70px 30px;
+    width: 300px;
+    height: 160px;
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.jjj3 {
+    padding: 20px 20px 50px;
+    width: 300px;
+    height: 160px;
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Работа с отступами padding в CSS */
+
+.iii1 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    margin-bottom: 15px;
+}
+
+.iii2 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    padding: 25px;
+}
+
+/* Влияние границы на расширение элементов в CSS */
+
+.iii3 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    margin-bottom: 15px;
+}
+
+.iii4 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    border: 10px solid green;
+}
+
+/* Влияние padding и границы на расширение элементов в CSS */
+
+.iii5 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    margin-bottom: 15px;
+}
+
+.iii6 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    padding: 25px;
+    border: 10px solid green;
+}
+
+/* Отмена расширения элементов в CSS */
+
+.iii7 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    margin-bottom: 15px;
+}
+
+.iii8 {
+    width: 100px;
+    height: 100px;
+    background: #f06b1e;
+    padding: 25px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+
+/* Особенности блочных элементов в CSS */
+
+/* Ширина и высота блочного элемента в CSS */
+
+.ggg1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+/* Ширина блочного элемента в CSS */
+
+.ggg2 {
+    height: 100px;
+    border: 1px solid red;
+}
+
+/* Высота блочного элемента в CSS */
+
+.ggg3 {
+    width: 100px;
+	border: 1px solid red;
+}
+
+/* Высота блочного элемента без содержимого в CSS */
+
+.ggg4 {
+    width: 100px;
+	border: 1px solid red;
+}
+
+/* Несколько блочных элементов рядом в CSS */
+
+.ggg5 {
+    width: 100px;
+	height: 100px;
+	border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+.ggg6 {
+    width: 100px;
+	height: 100px;
+	border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+.ggg7 {
+    width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+
+/* Особенности строчных элементов в CSS */
+
+/* Ширина и высота строчного элемента в CSS */
+
+.kkk1 {
+    width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+
+/* Несколько строчных элементов рядом в CSS */
+
+.kkk2 {
+    border: 1px solid red;
+}
+
+/* Отступы между строчными элементами в CSS */
+
+.kkk3 {
+    border: 1px solid red;
+}
+
+/* Определение блочной модели HTML тегов */
+
+/* p - block
+b - inline
+h2 - block
+h3 - block
+i - inline
+a - inline */
+
+/* Работа со свойством display в CSS */
+
+.lll1 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+.lll2 {
+    display: block;
+    width: 105px;
+    height: 25px;
+    border: 1px solid red;
+    margin-top: 15px;
+}
+
+/* Особенности строчно-блочных элементов в CSS */
+
+/* Ширина и высота строчно-блочного элемента в CSS */
+
+.lll3 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+/* Ширина строчно-блочного элемента в CSS */
+
+.lll4 {
+    height: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+/* Высота строчно-блочного элемента в CSS */
+
+.lll5 {
+    width: 100px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+/* Несколько строчно-блочных элементов рядом в CSS */
+
+.lll6 {
+    width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	border: 1px solid red;
+	display: inline-block;
+}
+
+/* Выравнивание блочных элементов в CSS */
+
+.lll7parent {
+    border: 1px solid red;
+}
+.lll7child1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+.lll7child2 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+.lll7child3 {
+    width: 400px;
+    height: 100px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+/* Выравнивание блочного элемента с отступом слева в CSS */
+
+.lll8parent {
+    padding: 10px 0;
+	border: 1px solid red;
+}
+.lll8child {
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+    margin-left: auto; /* задаем автоматический левый отступ */
+}
+
+/* Выравнивание блочного элемента с отступом справа в CSS */
+
+.lll9parent {
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.lll9child {
+    height: 100px;
+    width: 200px;
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: 20px; /* задаем правый отступ */
+}
+
+/* Выравнивание строчных элементов в CSS */
+
+/* Центрирование строчных элементов в CSS */
+
+.lll10parent {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.lll10child {
+    border: 1px solid green;
+}
+
+/* Центрирование нескольких строчных элементов */
+
+.lll11parent {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: center;
+}
+.lll11child {
+    border: 1px solid green;
+}
+
+/* Выравнивание строчных элементов по правому краю в CSS */
+
+.lll12parent {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: right;
+}
+.lll12child {
+    border: 1px solid green;
+}
+
+.lll13parent {
+    margin-top: 15px;
+    padding: 10px 0;
+    padding-right: 10px;
+    text-align: right;
+    border: 1px solid red;
+}
+.lll13child {
+    border: 1px solid green;
+}
+
+/* Выравнивание строчно-блочных элементов в CSS */
+
+.lll14parent {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.lll14child {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+    margin: 0 5px;
+}
+
+/* Выравнивание строчно-блочных элементов по правому краю в CSS */
+
+/* Задача 1 */
+
+.lll15parent {
+    text-align: right;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.lll15child {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+/* Задача 2 */
+
+.lll16parent {
+    margin-top: 15px;
+    text-align: right;
+    padding: 10px 10px;
+    border: 1px solid red;
+}
+.lll16child {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+/* Задача 3 */
+
+.lll17parent {
+    text-align: right;
+    margin-top: 15px;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.lll17child {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+    margin-right: 10px;
+}
+
+/* Задача 4 */
+
+.lll18parent {
+    margin-top: 15px;
+    text-align: right;
+    padding: 10px 0;
+	border: 1px solid red;
+}
+.lll18child {
+    display: inline-block;
+    width: 100px;
+	padding: 10px;
+	border: 1px solid green;
+}
+
+/* Задача 5 */
+
+.lll19parent {
+    margin-top: 15px;
+    text-align: right;
+    padding: 10px 0;
+	border: 1px solid red;
+}
+.lll19child {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+	padding: 10px;
+	border: 1px solid green;
+}
+
+/* Флекс элементы в CSS */
+
+.mmm1parent {
+    width: 600px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+}
+.mmm1child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Высота родителя флекс элементов в CSS */
+
+.mmm2parent {
+    width: 840px;
+    border: 1px solid red;
+    display: flex;
+}
+.mmm2child {
+    height: 100px;
+    width: 120px;
+    border: 1px solid green;
+}
+
+/* Ширина родителя флекс элементов в CSS */
+
+.mmm3parent {
+    border: 1px solid red;
+    display: flex;
+}
+.mmm3child {
+    width: 150px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Строчно-блочный родитель флекс элементов в CSS */
+
+.mmm4parent {
+    border: 1px solid red;
+    display: inline-flex;
+}
+.mmm4child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Отступы padding родителя флекс элементов в CSS */
+
+.mmm5parent {
+    border: 1px solid red;
+    display: inline-flex;
+    padding: 20px;
+}
+.mmm5child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Отступы margin потомкам в CSS */
+
+.mmm6parent {
+    height: 120px;
+    border: 1px solid red;
+    display: inline-flex;
+}
+.mmm6child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+    margin: 30px;
+}
+
+/* Выравнивание flex элементов в CSS */
+
+.mmm7parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: inline-flex;
+    justify-content: center;
+}
+.mmm7child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Выравнивание флекс элементов по родителю в CSS */
+
+.mmm8parent {
+    width: 900px;
+    height: 200px;
+    border: 1px solid red;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.mmm8child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Выравнивание флекс элементов по родителю с отступами */
+
+.mmm9parent {
+    width: 900px;
+    height: 200px;
+    border: 1px solid red;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.mmm9child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+/* Выравнивание флекс элементов по родителю с равными отступами */
+
+.mmm10parent {
+    width: 900px;
+    height: 200px;
+    border: 1px solid red;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+.mmm10child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
