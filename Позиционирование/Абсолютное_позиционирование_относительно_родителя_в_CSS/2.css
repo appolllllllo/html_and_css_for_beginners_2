@@ -1,0 +1,25 @@
+/* Задача №2 */
+
+#parent {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #4DEE99;
+    margin: auto;
+}
+#child1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+}
+#child2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    bottom: 50px;
+    right: 50px;
+}

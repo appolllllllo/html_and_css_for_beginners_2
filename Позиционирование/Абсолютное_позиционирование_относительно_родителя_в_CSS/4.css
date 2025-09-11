@@ -1,0 +1,43 @@
+/* Задача №4 */
+
+#parent{
+width: 500px;
+height: 500px;
+position: relative;
+border-radius: 50%;
+background-color: #4DEE99;
+margin: auto;
+}
+#child1 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}#child2 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+#child3 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 230px;
+    left: 215px;
+    background-color: white;
+}
+#child4 {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    background-color: white;
+}

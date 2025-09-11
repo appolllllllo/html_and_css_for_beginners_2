@@ -1,0 +1,31 @@
+/* Задача №1 */
+
+#elem1 {
+    position: relative;
+    top: 80px;
+    left: 50px;
+
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	background-color: #FF8888;
+}
+#elem2 {
+    position: relative;
+    top: 40px;
+    left: 100px;
+
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	background-color: #7E89EB;
+}
+#elem3 {
+    position: relative;
+    left: 180px;
+
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	background-color: #4DEE99;
+}

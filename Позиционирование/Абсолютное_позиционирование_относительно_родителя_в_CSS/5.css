@@ -1,0 +1,53 @@
+/* Задача №5 */
+
+#parent{
+width: 500px;
+height: 500px;
+position: relative;
+border-radius: 50%;
+background-color: rgb(204, 204, 44);
+margin: auto;
+}
+#child1 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}#child2 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+#child3 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    top: 225px;
+    left: 215px;
+    background-color: white;
+}
+#child4 {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    bottom: 70px; background-color: white;
+    border-radius: 0 0 100px 100px;
+}
+#child5 {
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    left: 145px;
+    bottom: 100px;
+    background-color: rgb(204, 204, 44);
+    border-radius: 0 0 100px 100px;
+}
