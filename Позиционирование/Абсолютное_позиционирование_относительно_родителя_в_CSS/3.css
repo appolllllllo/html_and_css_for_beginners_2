@@ -1,0 +1,39 @@
+/* Задача №3 */
+
+#parent {
+    width: 200px;
+    height: 430px;
+    position: relative;
+    border: 1px solid black;
+    margin: auto;
+}
+#child1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+}
+#child2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: yellow;
+}
+#child3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: green;
+}

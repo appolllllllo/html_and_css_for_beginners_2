@@ -1,0 +1,29 @@
+/* Задача №4 */
+
+#elem1 {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+
+	width: 50px;
+	height: 50px;
+	background-color: #FF8888;
+}
+#elem2 {
+	position: absolute;
+	top: 110px;
+	left: 110px;
+
+    width: 50px;
+	height: 50px;
+    background-color: #7E89EB;
+}
+#elem3 {
+	position: absolute;
+	top: 140px;
+	left: 140px;
+
+	width: 50px;
+	height: 50px;
+    background-color: #4dee99;
+}
