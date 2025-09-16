@@ -1,0 +1,423 @@
+h1 {
+    color: red;
+}
+
+p,
+ul,
+ol {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* Введение в свойство float в CSS */
+
+.aaa1 {
+    width: 400px;
+    text-align: justify;
+}
+
+.aaa2 {
+    width: 400px;
+    text-align: justify;
+}
+
+.aaa2 img {
+    float: left;
+}
+
+.aaa3 {
+    width: 400px;
+    text-align: justify;
+}
+
+.aaa3 img {
+    float: right;
+}
+
+/* Проникновение плавающих элементов через теги в CSS */
+
+.bbb1 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb1 img {
+    float: left;
+}
+
+.bbb1 p {
+    font-family: unset;
+    font-size: unset;
+}
+
+.bbb2 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb2 img {
+    float: left;
+}
+
+.bbb2 p {
+    font-family: unset;
+    font-size: unset;
+}
+
+/* Сочетание float и margin в CSS */
+
+.bbb3 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb3 img {
+    float: left;
+}
+
+.bbb3 p {
+    margin-left: 30px;
+    font-family: unset;
+    font-size: unset;
+}
+
+.bbb4 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb4 img {
+    float: left;
+}
+
+.bbb4 p {
+    margin-left: 30px;
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+.bbb5 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb5 img {
+    float: left;
+    opacity: 0.5;
+}
+
+.bbb5 p {
+    margin-left: 30px;
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+.bbb6 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb6 img {
+    float: left;
+    opacity: 0.5;
+}
+
+.bbb6 p {
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+.bbb7 {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.bbb7 img {
+    float: left;
+    opacity: 0.5;
+}
+
+.bbb7 p {
+    margin-left: 30px;
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+/* Сочетание float и padding в CSS */
+
+.ccc {
+    width: 400px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.ccc img {
+    float: left;
+    opacity: 0.5;
+}
+
+.ccc p {
+    margin-left: 30px;
+    padding-left: 30px;
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+/* Плавающие элементы под тегами в CSS */
+
+.ddd {
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.ddd img {
+    float: right;
+    opacity: 0.5;
+}
+
+.ddd p {
+    border: 1px solid green;
+    font-family: unset;
+    font-size: unset;
+}
+
+/* Действие флоатов на родителя в CSS */
+
+.eee1 {
+    border: 1px solid red;
+}
+
+.eee2 {
+    border: 1px solid red;
+}
+
+.eee2 img {
+    float: left;
+}
+
+.eee3 {
+    border: 1px solid red;
+}
+
+.eee3 img {
+    float: right;
+}
+
+/* Высота родителя флоатов в CSS */
+
+.fff {
+    height: 100px;
+    border: 1px solid red;
+}
+
+.fff img {
+    float: right;
+}
+
+/* Текст в родителе флоатов в CSS */
+
+.ggg1 {
+    border: 1px solid red;
+}
+
+.ggg1 img {
+    float: right;
+}
+
+.ggg2 {
+    border: 1px solid red;
+}
+
+.ggg2 img {
+    float: left;
+}
+
+.ggg3 {
+    border: 1px solid red;
+}
+
+.ggg3 img {
+    float: left;
+}
+
+.ggg4 {
+    border: 1px solid red;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.ggg4 img {
+    float: left;
+}
+
+/* Обтекание в CSS */
+
+.hhh {
+    border: 1px solid red;
+}
+
+.hhh img {
+    float: left;
+}
+
+.iii {
+    border: 1px solid red;
+}
+
+.iii img {
+    float: left
+}
+
+.iii.clearfix {
+    clear: both;
+}
+
+/* Отдельный див с клиарфиксом в CSS */
+
+.jjj {
+    border: 1px solid red;
+}
+
+.jjj img {
+    float: left;
+}
+
+.jjj + .clearfix {
+    clear: both;
+}
+
+/* Клиарфикс и высота родителя в CSS */
+
+.kkk1 {
+    border: 1px solid red;
+}
+
+.kkk1 img {
+    float: left;
+}
+
+.kkk2 {
+    border: 1px solid red;
+}
+
+.kkk2 img {
+    float: left;
+}
+
+.kkk2 :nth-child(2) {
+    clear: both;
+}
+
+/* Свойство float для блоков в CSS */
+
+.lll1 {
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.lll2 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.lll3 {
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.lll4 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+/* Свойство float и несколько блоков в CSS */
+
+.mmm1 {
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.mmm2 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.mmm3 {
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.mmm4 {
+    float: right;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+/* Свойство float и родитель без текста в CSS */
+
+.nnn1 {
+    width: 500px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.nnn2 {
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.nnn3 {
+    width: 500px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.nnn4 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.nnn5 {
+    width: 500px;
+    border: 1px solid red;
+    text-align: justify;
+}
+
+.nnn6 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+}
+
+.nnn5 :nth-child(3) {
+    clear: both;
+}

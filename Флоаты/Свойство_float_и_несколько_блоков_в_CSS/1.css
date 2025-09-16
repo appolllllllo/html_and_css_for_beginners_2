@@ -1,0 +1,19 @@
+/* Задача №1 */
+
+.parent {
+    border: 1px solid black;
+    width: 800px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.child {
+    float: right;
+    width: 130px;
+    height: 70px;
+    border: 1px solid green;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
