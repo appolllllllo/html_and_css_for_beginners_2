@@ -1,0 +1,19 @@
+/* Задача №1 */
+
+div {
+    width: 400px;
+    text-align: justify;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.first {
+    float: left;
+}
+
+.second {
+    float: right;
+}

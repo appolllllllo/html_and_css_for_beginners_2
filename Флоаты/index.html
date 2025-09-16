@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флоаты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Введение в свойство float в CSS</h1>
+    <p>Пусть у нас есть див с каким-то длинным текстом. Давайте вставим в начало этого текста картинку:</p>
+
+    <div class="aaa1">
+        <img src="image.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <p>Как вы видите, низ картинки располагается на первой строке текста, а остальная часть уходит вверх. Справа от картинки получается большое пустое пространство. Давайте сделаем так, чтобы текст заполнил это пустое пространство. Для этого картинке поставим свойство <b>float</b> в значении <i>left</i>:</p>
+
+    <div class="aaa2">
+        <img src="image.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <p>Итак, теперь картинка плавает слева, а текст обтекает ее соответственно справа. При этом пустое пространство сбоку от картинки исчезло.</p>
+    <p>Можно заставить картинку плавать не слева, а справа. Для этого <b>float</b> установим в значение <i>right</i>:</p>
+
+    <div class="aaa3">
+        <img src="image.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Введение_в_свойство_float_в_CSS/1.html">Задача №1</a></li>
+    </ul>
+
+    <h1>Проникновение плавающих элементов через теги в CSS</h1>
+    <p>Пусть теперь у нас текст размещен в абзацах, а картинка, которой задано свойство float находится над этими абзацами. В этом случае все будет работать, как и работало - наличие других тегов не мешает обтеканию:</p>
+    <div class="bbb1">
+
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Пусть теперь в первом абзаце мало текста - в этом случае картинка будет залазить и на второй абзац:</p>
+
+    <div class="bbb2">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <h1>Сочетание float и margin в CSS</h1>
+    <p>Сейчас наш текст прижат к картинке с левой стороны. Давайте попробуем немного отодвинуть этот текст. Для этого зададим нашим абзацам левый <b>margin</b> в 30px, а диву-родителю - красную границу.</p>
+    <p>Неожиданно вправо отступит только тот текст, который прилегает в диву-родителю, а текст, прилегающий к картинке - не отодвинется:</p>
+
+    <div class="bbb3">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Чтобы понять, почему это так, добавим абзацам зеленую границу:</p>
+
+    <div class="bbb4">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Как мы видим, на самом деле абзацы отодвигаются от левого края, но не от картинки, а от дива-родителя. Чтобы рассмотреть подробнее, давайте добавим еще и полупрозначность картинке через свойство <b>opacity</b>:</p>
+
+    <div class="bbb5">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Вот теперь точно видно, что реакция на <b>margin-left</b> есть, только абзацы на самом деле размещены под картинкой. Давайте уберем отступ, оставив при этом полупрозрачность картинке:</p>
+
+       <div class="bbb6">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Вот так на самом деле выглядят наши абзацы - их текст отодвинут картинкой, но физически абзацы лежат под картинкой, это видно по границе, которая начинается от левого края дива-родителя.</p>
+    <p>Давайте вернем margin и засунем картинку в первый абзац:</p>
+
+    <div class="bbb7">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Теперь картинка двигается вместе с абзацами!</p>
+
+    <h1>Сочетание float и padding в CSS</h1>
+    <p>Давайте опять поставим картинку над абзацами, оставив им при этом левый <b>padding</b>. В этом случае <b>padding</b> отодвинет только тот текст, который прилегает слева к диву-родителю, а не к нашей картинке:</p>
+
+    <div class="ccc">
+        <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>А теперь положим картинку в первый абзац - она будет двигаться вправо вместе с текстом абзацев:</p>
+
+    <div class="ccc">
+        <p><img src="image.jpg">
+        Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <h1>Плавающие элементы под тегами в CSS</h1>
+    <p>Пусть сейчас у нас есть два абзаца и картинка, размещенная в первом абзаце. Пусть этой картинке у нас задано свойство <b>float</b> в значении <i>right</i>, а также полупрозрачность:</p>
+
+    <div class="ddd">
+        <p><img src="image.jpg">
+        Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>А теперь давайте поставим в HTML коде картинку после первого абзаца и посмотрим, что будет:</p>
+
+    <div class="ddd">
+        <p>
+        Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+            <img src="image.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+    </div>
+
+    <p>Как мы видим, картинку обтекает текст второго абзаца, но не первого.</p>
+    <p>Давайте вообще переставим нашу картинку после второго абзаца. В этом случае она будет плавать справа, но никакого обтекания не будет:</p>
+
+    <div class="ddd">
+        <p>
+        Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elitorire. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+        <img src="image.jpg">
+    </div>
+
+    <p>Получается, что обтекать картинку будут только те элементы, которые находятся под ней, но не те, которые находятся над ней.</p>
+
+    <h1>Действие флоатов на родителя в CSS</h1>
+    <p>Пусть теперь у нас есть див, в котором лежит картинка. Диву зададим границу, а картинке пока не будем задавать свойство <b>float</b>.</p>
+
+    <div class="eee1">
+        <img src="image.jpg">
+    </div>
+
+    <p>Теперь давайте установим картинке свойство <b>float</b> в значении <i>left</i>. В этом случае произойдет удивительная вещь - высота родителя исчезнет, его нижняя граница будет начинаться сразу после верхней, а картинка вылезет снизу за своего родителя:</p>
+
+    <div class="eee2">
+        <img src="image.jpg">
+    </div>
+
+    <p>Получается, что элементы, которым задано свойство <b>float</b>, <i>не расширяют своего родителя по высоте</i>.</p>
+    <p>Давайте свойству <b>float</b> вместо <i>left</i> напишем значение <i>right</i>. Поведение родителя не изменится, но картинка начнет плавать справа:</p>
+
+    <div class="eee3">
+        <img src="image.jpg">
+    </div>
+
+    <h1>Высота родителя флоатов в CSS</h1>
+    <p>Хотя плавающие элементы не расширяют своего родителя по высоте, мы можем сами задать ему высоту с помощью свойства <b>height</b>. Сделаем это:</p>
+
+    <div class="fff">
+        <img src="image.jpg">
+    </div>
+
+    <h1>Текст в родителе флоатов в CSS</h1>
+    <p>Давайте уберем свойство <b>height</b> для дива и поставим небольшой текст перед картинкой.</p>
+    <p>В этом случае высота нашего дива будет равна высоте текста, а картинка по-прежнему вылезет за див:</p>
+
+    <div class="ggg1">
+        text
+        <img src="image.jpg">
+    </div>
+
+    <p>Давайте поставим текст после картинки - результат не изменится:</p>
+
+    <div class="ggg1">
+        <img src="image.jpg">
+        text
+    </div>
+
+    <p>Давайте сделаем так, чтобы картинка плавала по левому краю - результат будет аналогичным:</p>
+
+    <div class="ggg2">
+        <img src="image.jpg">
+        text
+    </div>
+    
+    <p>Давайте снизу добавим еще один див - картинка налезет и на него:</p>
+
+    <div class="ggg3">
+        <img src="image.jpg">
+        text
+    </div>
+    <div class="ggg3">
+        text
+    </div>
+
+    <p>Если же в первый див добавить настолько много текста, что по высоте он будет больше картинки - она не будет налезать на второй див:</p>
+
+    <div class="ggg4">
+        <img src="image.jpg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+    <div class="ggg3">
+        text
+    </div>
+
+    <p>Этот момент очень важен - при разработке может быть такое, что в каком-то блоке у вас достаточно много текста, а затем при реальной работе сайта в этом блоке будет меньше текста, чем запланировано. Получится, что в этом случае проявится проблема с налезанием плавающих элементов на соседние блоки.</p>
+
+    <h1>Обтекание в CSS</h1>
+    <p>Пусть сейчас у нас есть два дива с классом parent. В каждом из них есть небольшой текст, а в первом диве размещена картинка, которой задано свойство <b>float</b> в значении <i>left</i>.</p>
+    <p>Как вы уже знаете, в этом случае картинка налезет на второй блок:</p>
+
+    <div class="hhh">
+        <img src="image.jpg">
+        text
+    </div>
+    <div class="hhh">
+        text
+    </div>
+
+    <p>Давайте рассмотрим в следующих уроках, как избежать такого налезания или обтекания.</p>
+
+    <h1>Отмена обтекания с помощью свойства clear в CSS</h1>
+    <p>Для решения такой проблемы существует специальное свойство <b>clear</b>, которое отменяет обтекание. Значение <i>left</i>> отменяет обтекание слева, значение <i>right</i> - справа, а значение <i>both</i> - с обоих сторон. Это значение и используется чаще всего.</p>
+    <p>Итак, свойство <b>clear</b> отменяет обтекание. В нашем случае это позволит нам сделать так, чтобы плавающая картинка из первого дива не налазила на второй див.</p>
+    <p>При этом <b>clear</b> следует давать тому элементу, на который не должны налазить плавающие элементы, то есть в нашем случае его стоит дать второму диву.</p>
+    <p>Давайте сделаем это - дадим второму диву кроме класса <b>parent</b> еще и класс <b>clearfix</b> и для этого нового класса зададим свойство <b>clear</b> в значении <i>both</i> - налезание картинки исчезнет:</p>
+
+    <div class="iii">
+        <img src="image.jpg">
+        text
+    </div>
+    <div class="iii clearfix">
+        text
+    </div>
+
+    <p>Название clearfix является общепринятым, поэтому в дальнейшем используйте именно его.</p>
+
+    <h1>Отдельный див с клиарфиксом в CSS</h1>
+    <p>На самом деле клиарфикс чаще всего используют в виде отдельного дива, который ставится перед тем дивом, для которого вы хотите отменить налезание, вот так:</p>
+
+    <div class="jjj">
+        <img src="image.jpg">
+        text
+    </div>
+    <div class="clearfix"></div>
+    <div class="jjj">
+        text
+    </div>
+
+    <h1>Клиарфикс и высота родителя в CSS</h1>
+
+    <p>Давайте оставим один див с классом <b>parent</b>, уберем из него текст, оставив только плавающую картинку. Как вы уже знаете, в этом случае высота дива схлопнется в ноль, от него останется только верхняя и нижняя граница. Картинка же вылезет за наш див снизу:</p>
+
+    <div class="kkk1">
+        <img src="image.jpg">
+    </div>
+
+    <p>Давайте сделаем так, чтобы плавающая картинка расширяла наш див по высоте. Для этого используется хитрый прием - поставим после картинки див без текста с классом <b>clearfix</b>.</p>
+    <p>Наша картинка плавающий элемент и не расширяет родителя по высоте, но див-клиарфикс - не плавающий и влияет на высоту родителя.</p>
+    <p>Так как диву-клиарфиксу задано свойство <b>clear</b>, то получится, что он будет отпихиваться картинкой вниз и стоять под ней, расширяя при этом родителя по высоте.</p>
+    <p>Сам див-клиарфикс пустой и не виден на экране, но при этом расширяет родителя по высоте.</p>
+    <p>Итак, давайте попробуем:</p>
+
+    <div class="kkk2">
+        <img src="image.jpg">
+        <div class="clearfix"></div>
+    </div>
+
+    <h1>Свойство float для блоков в CSS</h1>
+    <p>Свойство <b>float</b> применимо не только к картинкам, но и к любым другим блокам. Давайте проверим это.</p>
+    <p>Пусть у нас есть див-родитель с классом <b>parent</b>, а внутри него находится текст и див-потомок с классом <b>child</b>. Обоим дивам задана граница, а диву потомку еще и ширина с высотой:</p>
+
+    <div class="lll1">
+        <div class="lll2"></div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <p>Давайте теперь диву-потомку установим <b>float</b> в значение <i>left</i> - текст начнет обтекать наш блок:</p>
+
+    <div class="lll3">
+        <div class="lll4"></div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Свойство_float_для_блоков_в_CSS/1.html">Задача №1</a></li>
+    </ul>
+
+    <h1>Свойство float и несколько блоков в CSS</h1>
+    <p>Пусть теперь рядом в HTML коде будет не один див-потомок, а два и обоим задан <b>float</b> в значении <i>left</i>. Давайте посмотрим, что будет:</p>
+
+    <div class="mmm1">
+        <div class="mmm2">1</div>
+        <div class="mmm2">2</div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <p>Итак, как мы видим, два блока-потомка выстроились в ряд, причем первый в HTML коде блок будет расположен слева.</p>
+    <p>Давайте теперь вместо значения <i>left</i> напишем значение <i>right</i>. В этом случае блоки будут плавать справа, причем порядок их поменяется на обратный по сравнению с порядком в HTML коде:</p>
+
+    <div class="mmm3">
+        <div class="mmm4">1</div>
+        <div class="mmm4">2</div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.
+    </div>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Свойство_float_и_несколько_блоков_в_CSS/1.html">Задача №1</a></li>
+    </ul>
+
+    <h1>Свойство float и родитель без текста в CSS</h1>
+    <p>Пусть теперь у нас есть див с классом <b>parent</b> без текста, но с двумя блоками-потомками с классом <b>child</b>:</p>
+
+    <div class="nnn1">
+        <div class="nnn2">1</div>
+        <div class="nnn2">2</div>
+    </div>
+
+    <p>Давайте сделаем блоки-потомки плавающими слева и посмотрим, что будет:</p>
+
+    <div class="nnn3">
+        <div class="nnn4">1</div>
+        <div class="nnn4">2</div>
+    </div>
+
+    <p>Как мы видим, блоки-потомки выстроились в ряд, однако, высота родителя пропала и наши блоки высунулись за него вниз.</p>
+
+    <p>Такое поведение нам уже известно. Для решения проблемы следует использовать клиарфикс. Сделаем это:</p>
+
+    <div class="nnn5">
+        <div class="nnn6">1</div>
+        <div class="nnn6">2</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Свойство_float_и_родитель_без_текста_в_CSS/1.html">Задача №1</a></li>
+        <li><a href="Свойство_float_и_родитель_без_текста_в_CSS/2.html">Задача №2</a></li>
+    </ul>
+</body>
+</html>

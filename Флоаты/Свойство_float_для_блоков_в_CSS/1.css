@@ -1,0 +1,18 @@
+/* Задача №1 */
+
+.parent {
+    width: 600px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 20px;
+}
+
+.child {
+    float: right;
+    width: 100px;
+    height: 70px;
+    border: 1px solid green;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom:10px;
+}

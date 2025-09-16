@@ -1,0 +1,22 @@
+/* Задача №2 */
+
+.parent {
+    width: 565px;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.child {
+    float: right;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid green;
+    margin-right: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
