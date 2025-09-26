@@ -1,0 +1,15 @@
+/* Задача №2 */
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child {
+    height: 40px;
+    border: 1px solid green;
+}

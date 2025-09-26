@@ -1,0 +1,19 @@
+/* Задача №2 */
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.child {
+    width: 100px;
+    border: 1px solid green;
+}
+
+.elem {
+    align-self: center;
+}

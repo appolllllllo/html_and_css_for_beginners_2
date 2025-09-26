@@ -1,0 +1,22 @@
+/* Задача №2 */
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.elem {
+    order: -1;
+    border: 1px solid red;
+}
