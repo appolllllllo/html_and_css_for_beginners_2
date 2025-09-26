@@ -1,0 +1,20 @@
+/* Задача №3 */
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child {
+    width: 100px;
+    height: 60px;
+    border: 1px solid green;
+}
+
+.elem {
+    align-self: center;
+}

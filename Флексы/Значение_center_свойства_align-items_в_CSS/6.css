@@ -1,0 +1,17 @@
+/* Задача №6 */
+
+.parent {
+    width: 900px;
+    height: 400px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 120px;
+    height: 60px;
+    border: 1px solid green;
+}

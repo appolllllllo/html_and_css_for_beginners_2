@@ -1,0 +1,467 @@
+h1 {
+    color: red;
+}
+
+p,
+ul,
+ol {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/* Размещение флекс элементов в ряд или колонку в CSS */
+
+/* Размещение флекс элементов в перевернутом ряду в CSS */
+
+.aaa1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.aaa2 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Размещение флекс элементов в колонку в CSS */
+
+.bbb1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.bbb2 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Переворачивание колонки с флекс элементами в CSS */
+
+.ccc1 {
+    display: flex;
+	flex-direction: column-reverse;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ccc2 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Главная и поперечная оси в флекс блоках в CSS */
+
+/* Выравнивание флекс элементов по главной оси в CSS */
+
+/* Пример 1 */
+
+.ddd1 {
+    display: flex;
+    flex-direction: row; /* главная ось слева направо */
+    justify-content: flex-start; /* блоки к началу главной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd2 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 2 */
+
+.ddd3 {
+    display: flex;
+    flex-direction: row; /* главная ось слева направо */
+    justify-content: flex-end; /* блоки к концу главной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd4 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 3 */
+
+.ddd5 {
+    display: flex;
+	flex-direction: row-reverse; /* главная ось справа налево */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd6 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 4 */
+
+.ddd7 {
+    display: flex;
+	flex-direction: row-reverse; /* главная ось справа налево */ 
+	justify-content: flex-end; /* блоки к концу главной оси */ 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd8 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 5 */
+
+.ddd9 {
+    display: flex;
+	flex-direction: column; /* главная ось сверху вниз */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd10 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 6 */
+
+.ddd11 {
+    display: flex;
+	flex-direction: column; /* главная ось сверху вниз */ 
+	justify-content: flex-end; /* блоки к концу главной оси */ 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd12 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 7 */
+
+.ddd13 {
+    display: flex;
+	flex-direction: column-reverse; /* главная ось снизу вверх */ 
+	justify-content: flex-start; /* блоки к началу главной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd14 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 8 */
+
+.ddd15 {
+    display: flex;
+	flex-direction: column-reverse; /* главная ось снизу вверх */ 
+	justify-content: flex-end; /* блоки к концу главной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ddd16 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Выравнивание флекс блоков по поперечной оси в CSS */
+
+/* Пример 1 */
+
+.eee1 {
+    display: flex;
+	flex-direction: row; /* главная ось направо, поперечная вниз */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+	align-items: flex-start; /* блоки к началу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee2 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 2 */
+
+.eee3 {
+    display: flex;
+	flex-direction: row; /* главная ось направо, поперечная вниз */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+	align-items: flex-end; /* блоки к концу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee4 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 3 */
+
+.eee5 {
+    display: flex;
+	flex-direction: column; /* главная ось вниз, поперечная вправо */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+	align-items: flex-start; /* блоки к началу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee6 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 4 */
+
+.eee7 {
+    display: flex;
+	flex-direction: column; /* главная ось вниз, поперечная вправо */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+	align-items: flex-end; /* блоки к концу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee8 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 5 */
+
+.eee9 {
+    display: flex;
+	flex-direction: column; /* главная ось вниз, поперечная вправо */ 
+	justify-content: flex-end; /* блоки к концу главной оси */ 
+	align-items: flex-end; /* блоки к концу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee10 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Пример 6 */
+
+.eee11 {
+    display: flex;
+	flex-direction: column-reverse; /* главная ось вверх, поперечная вправо */ 
+	justify-content: flex-start; /* блоки к началу главной оси */ 
+	align-items: flex-start; /* блоки к началу поперечной оси */
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.eee12 {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Значение center свойства align-items в CSS */
+
+.fff1 {
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.fff2 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+/* Центрирование без высоты блоков в CSS */
+
+.ggg1 {
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.ggg2 {
+	width: 50px;
+	border: 1px solid green;
+}
+
+/* Центрирование с разной высотой блоков в CSS */
+
+.hhh1 {
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.hhh2 {
+	width: 50px;
+	border: 1px solid green;
+}
+
+/* Значение stretch свойства align-items в CSS */
+
+.iii1 {
+	display: flex;
+	flex-direction: row; 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.iii2 {
+	width: 30px;
+	border: 1px solid green;
+}
+
+.iii3 {
+	display: flex;
+	flex-direction: column; 
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.iii4 {
+	height: 30px;
+	border: 1px solid green;
+}
+
+/* Выравнивание отдельного элемента в flex модели в CSS */
+
+.jjj1 {
+	display: flex; 
+	align-items: center;
+    width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.jjj2 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+.jjj2.elem {
+	align-self: flex-start;
+}
+
+/* Порядок flex блоков в CSS */
+
+.kkk1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.kkk2 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+.kkk3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.kkk4 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+.kkk4.elem {
+	order: 1;
+	border: 1px solid red;
+}
+
+.kkk5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.kkk6 {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+
+.kkk6.elem {
+	order: -1;
+	border: 1px solid red;
+}
