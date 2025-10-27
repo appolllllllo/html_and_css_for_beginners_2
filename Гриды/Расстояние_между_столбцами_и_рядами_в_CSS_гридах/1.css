@@ -1,0 +1,16 @@
+/* Задача №1 */
+
+.parent {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid #696969;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+.parent > div {
+    border: 1px solid #696969;
+    padding: 10px;
+}

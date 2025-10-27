@@ -1,0 +1,14 @@
+/* Задача №2 */
+
+.parent {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 400px;
+}
+
+.parent > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
