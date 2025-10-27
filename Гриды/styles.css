@@ -1,0 +1,934 @@
+h1 {
+    color: red;
+}
+
+p,
+ul,
+ol {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/* Введение в CSS гриды */
+
+#aaa1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#aaa2 {
+    padding: 10px;
+    border: 1px solid #696989;
+    grid-row: 1 / 3;
+}
+
+#aaa3 {
+    padding: 10px;
+    border: 1px solid #696989;
+    grid-row: 1 / 2;
+}
+
+#aaa4 {
+    padding: 10px;
+    border: 1px solid #696989;
+    grid-row: 1 / 2;
+}
+
+#aaa5 {
+    padding: 10px;
+    border: 1px solid #696989;
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+/* Треки и линии в CSS гридах */
+
+/* Отображение гридов в отладчике браузера */
+
+/* Количество и ширина столбцов в CSS гридах */
+
+/* Пример 1 */
+
+#bbb1 {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#bbb1 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 2 */
+
+#bbb2 {
+    display: grid;
+    grid-template-columns: 50px 100px 200px 250px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#bbb2 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Единица fr в CSS гридах */
+
+#ccc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ccc > div {
+    padding: 10px;
+    border: 1px solid #696989;
+    box-sizing: border-box;
+}
+
+/* Практические задачи */
+
+/* Дробные единицы fr в CSS гридах */
+
+#ddd {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 2.5fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ddd > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Пиксели и единицы fr в CSS гридах */
+
+#eee {
+    display: grid;
+    grid-template-columns: 100px 1fr 50px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#eee > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Проценты и единицы fr в CSS гридах */
+
+#fff {
+    display: grid;
+    grid-template-columns: 50% 1fr 2fr 30%;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#fff > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Функция repeat в CSS гридах */
+
+/* Пример 1 */
+
+#ggg1 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ggg1 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 2 */
+
+#ggg2 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 2fr; */
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ggg2 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 3 */
+
+#ggg3 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 2fr 2fr 2fr; */
+    grid-template-columns: repeat(3, 1fr) repeat(3, 2fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ggg3 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 4 */
+
+#ggg4 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 3fr 2fr 2fr 2fr; */
+    grid-template-columns: repeat(3, 1fr) 3fr repeat(3, 2fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ggg4 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 5 */
+
+#ggg5 {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(3, 200px);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#ggg5 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Значение auto в CSS гридах */
+
+#hhh {
+    display: grid;
+    grid-template-columns: 100px auto 150px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#hhh > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Значение auto-fill в CSS гридах */
+
+#iii {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    border: 2px solid #696989;
+    padding: 10px;
+}
+
+#iii > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Функция minmax в CSS гридах */
+
+#jjj {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    border: 2px solid #696989;
+    padding: 10px;
+}
+
+#jjj > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Значение auto-fit в CSS гридах */
+
+/* Пример 1 */
+
+#iii1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#iii1 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 2 */
+
+#iii2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 400px;
+}
+
+#iii2 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Количество и ширина рядов в CSS гридах */
+
+/* Пример 1 */
+
+#jjj1 {
+    display: grid;
+    grid-template-rows: 50px 100px 50px 50px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+}
+
+#jjj1 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 2 */
+
+#jjj2 {
+    display: grid;
+    grid-template-rows: 100px auto 60px;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+#jjj2 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Пример 3 */
+
+#jjj3 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+#jjj3 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 4 */
+
+#jjj4 {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 50px);
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+#jjj4 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Практические задачи */
+
+/* Сокращение для рядов и столбцов в CSS гридах */
+
+/* Пример 1 */
+
+#kkk1 {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+#kkk1 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Пример 2 */
+
+#kkk2 {
+    display: grid;
+    grid-template: 60px 1fr 60px / 20% 1fr 15%;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+#kkk2 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Пример 3 */
+
+#kkk3 {
+    display: grid;
+    grid-template: 2fr 1fr 1fr / 0.5fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+#kkk3 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Практические задачи */
+
+/* Объединение рядов в CSS гридах */
+
+/* Пример 1 */
+
+#lll1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #696989;
+}
+
+#lll1 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#lll1 > #elem1 {
+    grid-row: 1 / 3;
+}
+
+#lll1 > #elem2 {
+    grid-row: 1 / 2;
+}
+
+#lll1 > #elem3 {
+    grid-row: 2 / 3;
+}
+
+/* Пример 2 */
+
+#lll2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #696989;
+}
+
+#lll2 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#lll2 > #elem1 {
+    grid-row: 1 / 2;
+}
+
+#lll2 > #elem2 {
+    grid-row: 2 / 3;
+}
+
+#lll2 > #elem3 {
+    grid-row: 3 / 4;
+}
+
+#lll2 > #elem4 {
+    grid-row: 1 / 4;
+}
+
+/* Практические задачи */
+
+/* Объединение столбцов в CSS гридах */
+
+#mmm {
+    display: grid;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+#mmm > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+#mmm > #elem1 {
+    grid-column: 1 / 2;
+}
+
+#mmm > #elem2 {
+    grid-column: 2 / 3;
+}
+
+#mmm > #elem3 {
+    grid-column: 3 / 4;
+}
+
+#mmm > #elem4 {
+    grid-column: 1 / 4;
+}
+
+/* Практические задачи */
+
+/* Комбинации объединений по рядам и столбцам в CSS гридах */
+
+/* Пример 1 */
+
+#nnn1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn1 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#nnn1 > #elem1 {
+    grid-row: 1 / 3;
+}
+
+#nnn1 > #elem2 {
+    grid-row: 1 / 2;
+}
+
+#nnn1 > #elem3 {
+    grid-row: 1 / 2;
+}
+
+#nnn1 > #elem4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+/* Пример 2 */
+
+#nnn2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn2 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#nnn2 > #elem1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+#nnn2 > #elem2 {
+    grid-row: 2 / 4;
+	grid-column: 1 / 2;
+}
+
+#nnn2 > #elem3 {
+    grid-row: 2 / 3;
+	grid-column: 2 / 4;
+}
+
+#nnn2 > #elem4 {
+    grid-row: 3 / 4;
+	grid-column: 2 / 4;
+}
+
+#nnn2 > #elem5 {
+    grid-row: 4 / 5;
+	grid-column: 1 / 4;
+}
+
+/* Пример 3 */
+
+#nnn3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn3 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+#nnn3 > #elem1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+#nnn3 > #elem2 {
+    grid-row: 2 / 3;
+}
+
+#nnn3 > #elem3 {
+    grid-row: 2 / 3;
+}
+
+#nnn3 > #elem4 {
+    grid-row: 2 / 3;
+}
+
+/* Пример 4 */
+
+#nnn4 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn4 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#nnn4 > #elem1 {
+    grid-row: 1 / 2;
+	grid-column: 1 / 4;
+}
+
+#nnn4 > #elem2 {
+    grid-row: 2 / 3;
+}
+
+#nnn4 > #elem3 {
+    grid-row: 2 / 3;
+}
+
+#nnn4 > #elem4 {
+    grid-row: 2 / 3;
+}
+
+/* Пример 5 */
+
+#nnn5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn5 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#nnn5 > #elem1 {
+    grid-row: 1 / 2;
+	grid-column: 1 / 4;
+}
+
+#nnn5 > #elem2 {
+    grid-row: 1 / 2;
+	grid-column: 4 / 5;
+}
+
+#nnn5 > #elem3 {
+    grid-row: 2 / 3;
+	grid-column: 1 / 3;
+}
+
+#nnn5 > #elem4 {
+    grid-row: 2 / 3;
+	grid-column: 3 / 5;
+}
+
+/* Пример 6 */
+
+#nnn6 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #696989;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+#nnn6 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+#nnn6 > #elem1 {
+    grid-row: 1 / 2;
+	grid-column: 1 / 5;
+}
+
+#nnn6 > #elem2 {
+    grid-row: 2 / 3;
+	grid-column: 1 / 2;
+}
+
+#nnn6 > #elem3 {
+    grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+
+#nnn6 > #elem4 {
+    grid-row: 2 / 3;
+	grid-column: 3 / 4;
+}
+
+#nnn6 > #elem5 {
+    grid-row: 2 / 3;
+	grid-column: 4 / 5;
+}
+
+/* Практические задачи */
+
+/* Перекрытие столбцов в CSS гридах */
+
+#ooo {
+    display: grid;
+    padding: 10px;
+    border: 2px solid #696989;
+    width: 400px;
+    height: 300px;
+}
+
+#ooo > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+#ooo > #elem1 {
+    grid-column: 1 / 4;
+}
+
+#ooo > #elem2 {
+    grid-column: 2 / 3;
+}
+
+#ooo > #elem3 {
+    grid-column: 1 / 2;
+}
+
+#ooo > #elem4 {
+    grid-column: 3 / 4;
+}
+
+/* Практические задачи */
+
+/* Расстояние между столбцами в CSS гридах */
+
+#ppp {
+    display: grid;
+    column-gap: 20px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    padding: 10px;
+    border: 2px solid #696989;
+    width: 600px;
+    height: 200px;
+}
+
+#ppp > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Практические задачи */
+
+/* Расстояние между рядами в CSS гридах */
+
+#qqq {
+    display: grid;
+    row-gap: 10px;
+    padding: 10px;
+    border: 2px solid #696989;
+    width: 600px;
+    height: 200px;
+}
+
+#qqq > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Практические задачи */
+
+/* Расстояние между столбцами и рядами в CSS гридах */
+
+/* Пример 1 */
+
+#rrr1 {
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    padding: 10px;
+    border: 2px solid #696989;
+    width: 600px;
+    height: 200px;
+}
+
+#rrr1 > div {
+    border: 1px solid #696989;
+    padding: 10px;
+}
+
+/* Пример 2 */
+
+#rrr2 {
+    display: grid;
+    gap: 20px 10px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    border: 2px solid #696989;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+}
+
+#rrr2 > div {
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Практические задачи */
+
+/* Плиточка в грид в CSS */
+
+/* Плиточка из 9 блоков по 3 в ряд без отступа */
+
+#sss1 {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border: 2px solid #696989;
+	padding: 10px;
+	width: 600px;
+}
+
+#sss1 > div {
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #696989;
+}
+
+/* Плиточка из 9 блоков по 3 в ряд с отступами */
+
+#sss2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	border: 2px solid #696989;
+	padding: 10px;
+	width: 600px;
+}
+
+#sss2 > div {
+	height: 100px;
+	padding: 10px;
+	border: 1px solid #696989;
+}
+
+/* Плиточка из 9 блоков по 3 в ряд с отступами только между блоками */
+
+#sss3 {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	border: 2px solid #696989;
+	width: 600px;
+}
+
+#sss3 > div {
+    height: 100px;
+	padding: 10px;
+	border: 1px solid #696989;
+}
+
+/* Плиточка из 8 блоков по 3 в ряд с нехватающим блоком */
+
+#sss4 {
+  	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	border: 2px solid #696989;
+	width: 600px;  
+}
+
+#sss4 > div {
+    height: 100px;
+	padding: 10px;
+	border: 1px solid #696989;
+}
+
+/* Практические задачи */

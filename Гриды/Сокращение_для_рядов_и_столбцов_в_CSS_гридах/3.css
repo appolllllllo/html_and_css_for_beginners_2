@@ -1,0 +1,15 @@
+/* Задача №3 */
+
+.parent {
+    display: grid;
+    grid-template: 1fr 1fr 2fr 4fr / 0.5fr 1.5fr 3fr;
+    border: 2px solid #696969;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+.parent > div {
+    border: 1px solid #696969;
+    padding: 10px;
+}
