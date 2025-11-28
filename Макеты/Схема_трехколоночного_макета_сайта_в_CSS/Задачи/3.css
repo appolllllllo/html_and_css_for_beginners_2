@@ -1,0 +1,48 @@
+/* Задача № 3*/
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+#header {
+    height: 250px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#container {
+    display: flex;
+}
+
+#left {
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+#right {
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+#content {
+    width: 560px;
+    height: 700px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#footer {
+    height: 100px;
+    padding: 20px;
+    border: 1px solid black;
+}

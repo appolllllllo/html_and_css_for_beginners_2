@@ -1,0 +1,87 @@
+/* Задача №1 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: justify;
+}
+
+.wrapper h1,
+.wrapper h2 {
+    text-align: center;
+}
+
+.center h2 {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.center ol {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.center li {
+    padding-bottom: 10px;
+}
+
+.wrapper.line.green {
+    background-color: #008040;
+    color: white;
+}
+
+.wrapper.line.green h1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 7px;
+    margin: 0;
+}
+
+.wrapper.line.green p {
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.center {
+    width: 830px;
+    padding: 7px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.wrapper.line.red {
+    background-color: #C60304;
+    color: white;
+}
+
+.wrapper.line.red h2 {
+    text-align: center;
+    font-size: 27px;
+    padding: 0;
+    margin: 5px;
+}
+
+.wrapper.line.red p {
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.wrapper.line.orange {
+    background-color: #FF8040;
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wrapper:last-of-type {
+    margin-bottom: 30px;
+}

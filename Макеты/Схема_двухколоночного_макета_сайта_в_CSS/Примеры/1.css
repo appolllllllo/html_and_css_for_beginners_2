@@ -1,0 +1,131 @@
+/* Пример №1 */
+
+/* Теперь назначим стили врапперу, выровняв его по центру экрана: */
+
+#wrapper {
+    width: 1000px;
+    margin: 30px auto;
+    border: 2px solid black;
+}
+
+/* Зададим теперь стили хедера и футера: */
+
+#header {
+    height: 200px;
+    border: 1px solid black;
+}
+
+#footer {
+    height: 200px;
+    border: 1px solid black;
+}
+
+/* Как вы видите, мы задаем хедеру и футеру высоту. Мы делаем это, как как в нашей схеме у них нет содержимого. При наличии содержимого высоту блокам задавать не стоит - она будет формироваться их содержимым. */
+
+/* Обратите также внимание на то, что мы не задаем им ширину. Дело в том, что хедер и футер - блочные элементы и их ширина будет автоматически равна ширине враппера. */
+
+/* Давайте теперь зададим им padding, чтобы текст не прилипал к границам: */
+
+#header {
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#footer {
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* Наличие paddingа, однако, плохо повлияет на размеры блоков - они станут больше, чем указано. Давайте изменим поведение всех блоков так, чтобы padding и границы не расширяли наши блоки: */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Теперь нам нужно поставить контент и сайдбар в один ряд. Сделаем это с помощью флексов: */
+
+#container {
+	display: flex;
+}
+
+/* Укажем контенту и сайдбару их ширину. При этом сумма их ширин должна быть равна ширине враппера: */
+
+#content {
+	width: 800px;
+}
+#sidebar {
+	width: 200px;
+}
+
+/* Пусть мы хотим сделать отступ между сайдбаром и контентом. В этом случае сайдбару нужно поставить margin. При этом нам придется от кого-то отщипнуть ширину для этого margin. Отщипнем от контента, соответственно уменьшив его ширину: */
+
+#content {
+	width: 780px;
+}
+#sidebar {
+	width: 200px;
+	margin-right: 20px;
+}
+
+/* Давайте теперь добавим высоту, так как наши элементы не содержат содержимого. Достаточно добавить высоту только одному элементу, ведь второй флекс элемент подстроится по высоте (почему?). Давайте зададим высоту контенту: */
+
+#content {
+	width: 780px;
+	height: 700px;
+}
+#sidebar {
+	width: 200px;
+	margin-right: 20px;
+}
+
+/* Давайте добавим контенту и сайдбару остальные стили: */
+
+#content {
+	width: 780px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+#sidebar {
+	width: 200px;
+	margin-right: 20px;
+	padding: 20px;
+	border: 1px solid black;
+} */
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 30px auto;
+	border: 1px solid black;
+}
+#header {
+	height: 200px;
+	padding: 20px;
+	border: 1px solid black;
+}
+#container {
+	display: flex;
+}
+#content {
+	width: 780px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+#sidebar {
+	width: 200px;
+	margin-right: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+#footer {
+	height: 200px;
+	padding: 20px;
+	border: 1px solid black;
+}
