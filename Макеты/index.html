@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макеты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Создание меню в CSS</h1>
+    <p>В данном уроке мы будем практиковаться создавать менюшки сайтов. Давайте для примера сделаем следующую менюшку:</p>
+    <div id="menu1">
+        <a href="#">link text 1</a>
+        <a href="#" class="active">link text 2</a>
+        <a href="#">link text 3</a>
+        <a href="#">link text 4</a>
+        <a href="#">link text 5</a>
+    </div>
+    <!-- Как вы видите на образце, одна из ссылок меню выделяется. Она символизирует то, что мы находимся на странице сайта, соответствующей этому пункту меню. Такие страницы принято выделять с помощью класса active. -->
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Создание_меню_в_CSS/1.html">Задача №1</a></li>
+        <li><a href="Создание_меню_в_CSS/2.html">Задача №2</a></li>
+        <li><a href="Создание_меню_в_CSS/3.html">Задача №3</a></li>
+    </ul>
+
+    <h1>Простые одноколоночные макеты сайтов в CSS</h1>
+    <p>В данном уроке мы будем практиковаться создавать простые одноколоночные макеты сайтов. </p>
+
+    <div id="wrapper1">
+        <div id="menu">
+            <a href="#">link text 1</a>
+            <a href="#" class="active">link text 2</a>
+            <a href="#">link text 3</a>
+            <a href="#">link text 4</a>
+            <a href="#">link text 5</a>
+        </div>
+
+    <div id="content">
+        <h1>Proin tristique lorem</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin ultrices dictum. Nullam non diam vestibulum, interdum nibh quis, sollicitudin sem. Vivamus sit amet sagittis massa. Cras aliquet lacus at interdum blandit. Quisque quis tellus nunc. Cras at nisi laoreet, suscipit nibh quis, pellentesque diam.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a bibendum orci. Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis nunc. Nullam vel mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras nec neque vel risus accumsan sollicitudin quis ut velit. Fusce et libero hendrerit, accumsan enim non, dictum eros. Proin sem justo, porta id magna quis, consequat scelerisque urna.</p>
+    </div>
+    </div>
+
+    <h1>Совет 1</h1>
+    <p>Удобнее всего давать отступы сверху вниз. К примеру, у нас есть менюшка и контент, а между ними - пустое пространство. Очевидно, что это пространство может быть сделано нижним отступом менюшки, верхним отступом контента, или их одновременным влиянием. В этом случае лучше задать нижний отступ менюшке, а контенту убрать верхний <b>padding</b> и <b>margin</b> по умолчанию для <b>h1</b>.</p>
+
+    <h1>Совет 2</h1>
+    <p>Потомки не должны формировать отступ между родителями. Например, у нас есть менюшка. Нижний отступ этой менюшки можно сформировать либо <b>margin</b> дива с меню, либо <b>margin</b> ссылок. Лучше выбрать первый вариант, так как ссылки не должны действовать через голову родителя.</p>
+
+    <h1>Совет 3</h1>
+    <p>Пусть между двумя элементами есть отступ и в данном случае визуально нет разницы, что выбрать для отступа - <b>margin</b> или <b>padding</b>. В этом случае выбирайте <b>margin</b>, так как именно он должен создавать отступы между элементами.</p>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Простые_одноколоночные_макеты_сайтов_в_CSS/1.html">Задача №1</a></li>
+        <li><a href="Простые_одноколоночные_макеты_сайтов_в_CSS/2.html">Задача №2</a></li>
+        <li><a href="Простые_одноколоночные_макеты_сайтов_в_CSS/3.html">Задача №3</a></li>
+    </ul>
+
+    <h1>Схема макетов с несколькими врапперами в CSS</h1>
+    <p>Часто при разработке встречаются макеты, в которых блоки имеют фон на всю ширину страницы, а содержимое этих блоков стоит по центру.</p>
+
+    <p>В таком макете нам придется сделать не один враппер, а несколько - для каждого блока. При этом внутри враппера должен быть еще один блок, выполняющий центрирование содержимого. Также должен быть класс, отвечающий за покраску содержимого фоном.</p>
+
+    <p>Класс <b>center</b> будет использоваться для центрирования блоков:</p>
+
+    <p>Класс <b>line</b> будет использоваться для покраски блоков:</p>
+
+    <p>А класс <b>wrapper</b> будет родителем каждого блока. Используем его для задания отступа между блоками.</p>
+
+    <h1>Примеры</h1>
+    <ul>
+      <li><a href="Схема_макетов_с_несколькими_врапперами_в_CSS/Примеры/1.html">Пример №1</a></li>
+    </ul>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Схема_макетов_с_несколькими_врапперами_в_CSS/Задачи/1.html">Задача №1</a></li>
+    </ul>
+
+    <h1>Структурные блоки сайта в HTML</h1>
+    <p>Структурные блоки сайта имеют стандартные названия. Верхняя часть сайта называется <b>header</b>, нижняя - <b>footer</b>, основная часть с текстом - <b>content</b>, а боковая часть - <b>sidebar</b>. А общий блок, в котором расположен весь сайт называется <b>wrapper</b>. Часто основной текст и боковые панели объединяют в одном блоке с названием <b>container</b>. Сайдбар может быть не один. Часто на сайтах делают два сайдбара - один слева от контента, а второй - справа.</p>
+
+    <h1>Схема двухколоночного макета сайта в CSS</h1>
+
+    <h1>Примеры</h1>
+    <ul>
+        <li><a href="Схема_двухколоночного_макета_сайта_в_CSS/Примеры/1.html">Пример №1</a></li>
+    </ul>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Схема_двухколоночного_макета_сайта_в_CSS/Задачи/1.html">Задача №1</a></li>
+        <li><a href="Схема_двухколоночного_макета_сайта_в_CSS/Задачи/2.html">Задача №2</a></li>
+    </ul>
+
+    <h1>Схема трехколоночного макета сайта в CSS</h1>
+
+    <h1>Примеры</h1>
+    <ul>
+        <li><a href="Схема_трехколоночного_макета_сайта_в_CSS/Примеры/1.html">Пример №1</a></li>
+    </ul>
+
+    <h1>Практические задачи</h1>
+    <ul>
+        <li><a href="Схема_трехколоночного_макета_сайта_в_CSS/Задачи/1.html">Задача №1</a></li>
+        <li><a href="Схема_трехколоночного_макета_сайта_в_CSS/Задачи/2.html">Задача №2</a></li>
+        <li><a href="Схема_трехколоночного_макета_сайта_в_CSS/Задачи/3.html">Задача №3</a></li>
+    </ul>
+
+    <h1>Специальные теги для элементов макета сайта в HTML</h1>
+    <p>Существуют специальные теги для элементов макета сайта. Использование таких тегов улучшает <i>семантику</i> кода, то есть придает ему больше смысла. Более подробно мы рассмотрим их в следующих уроках.</p>
+
+    <h1>Основные теги макета в HTML</h1>
+    <p>Для хедера сайта следует использовать тег <b>header</b>, для футера - тег <b>footer</b>, для сайдбара - тег <b>aside</b>, для контента - тег <b>main</b>.</p>
+
+    <p>Для меню следует использовать тег <b>nav.</b></p>
+
+<!-- Задача №1
+
+Дан следующий код:
+
+<div id="wrapper">
+	<div id="header">
+		<div id="menu">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+	</div>
+	<div id="container">
+		<div id="sidebar">
+			sidebar
+		</div>
+		<div id="content">
+			content
+		</div>
+	</div>
+	<div id="footer">
+		footer
+	</div>
+</div>
+
+Преобразуйте этот код с помощью изученных вами новых тегов.
+
+<div id="wrapper">
+    <header>
+        <nav>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </nav>
+    </header>
+    <div id="container">
+        <aside>
+            sidebar
+        </aside>
+        <main>
+            content
+        </main>
+    </div>
+    <footer>
+        footer
+    </footer>
+</div> -->
+
+<h1>Тег для секций в HTML</h1>
+<p>Блоки сайта можно объединять в секции с помощью тега <b>section</b>.</p>
+
+<!-- Задача №1
+
+Дан следующий код:
+
+<div id="content">
+	<h1></h1>
+	
+	<div class="section">
+		<h2></h2>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+	</div>
+	<div class="section">
+		<h2></h2>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+	</div>
+</div>
+
+Преобразуйте этот код с помощью изученных вами новых тегов.
+
+<main>
+	<h1></h1>
+	
+	<section>
+		<h2></h2>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+	</section>
+	<section>
+		<h2></h2>
+		<p>
+			
+		</p>
+		<p>
+			
+		</p>
+	</section>
+</main> -->
+
+<!-- Задача №2
+
+Дан следующий код:
+
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<img src="" alt="logo">
+		</div>
+		<div id="menu">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+	</div>
+	<div id="container">
+		<div id="left">
+			<div class="section">
+				section
+			</div>
+			<div class="section">
+				section
+			</div>
+			<div class="section">
+				section
+			</div>
+		</div>
+		<div id="content">
+			<h1>main header</h1>
+
+			<div class="section">
+				<h2>section header</h2>
+				<div>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+				</div>
+				<div>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+			<div class="section">
+				<h2>section header</h2>
+				<div>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+				</div>
+				<div>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div class="section">
+				section
+			</div>
+			<div class="section">
+				section
+			</div>
+			<div class="section">
+				section
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		footer
+	</div>
+</div>
+
+Преобразуйте этот код с помощью изученных вами новых тегов.
+
+<div id="wrapper">
+  <header>
+    <div id="logo">
+      <img src="" alt="logo">
+    </div>
+    <nav>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </nav>
+  </header>
+
+  <div id="container">
+    <aside>
+      <section>
+        section
+      </section>
+      <section>
+        section
+      </section>
+      <section>
+        section
+      </section>
+    </aside>
+
+    <main>
+      <h1>main header</h1>
+
+      <section>
+        <h2>section header</h2>
+        <p></p>
+        <p></p>
+      </section>
+
+      <section>
+        <h2>section header</h2>
+        <p></p>
+        <p></p>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        section
+      </section>
+      <section>
+        section
+      </section>
+      <section>
+        section
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    footer
+  </footer>
+</div> -->
+
+<h1>Практика на макетах на HTML и CSS</h1>
+<h1>Примеры</h1>
+<ul>
+  <li><a href="Практика_на_макетах_на_HTML_и_CSS/Примеры/1.html">Пример №1</a></li>
+</ul>
+
+<h1>Задачи</h1>
+<ul>
+  <li><a href="Практика_на_макетах_на_HTML_и_CSS/Задачи/1/1.html">Задача №1</a></li>
+  <li><a href="Практика_на_макетах_на_HTML_и_CSS/Задачи/2/2.html">Задача №2</a></li>
+</ul>
+</body>
+</html>

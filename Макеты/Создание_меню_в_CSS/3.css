@@ -1,0 +1,22 @@
+/* Задача №3 */
+
+#menu {
+    display: flex;
+}
+
+#menu a {
+    padding: 10px 40px 15px 40px;
+    font: 16px Arial;
+    text-decoration: none;
+    color: white;
+    background: #16A177;
+}
+
+#menu a:hover, #menu a.active, #menu a:nth-child(5):hover {
+    background-color: #16785B;
+}
+
+#menu a:nth-child(5) {
+    background-color: white;
+}
+

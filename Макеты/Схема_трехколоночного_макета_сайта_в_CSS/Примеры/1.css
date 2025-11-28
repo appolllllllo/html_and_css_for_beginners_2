@@ -1,0 +1,84 @@
+/* Пример №1 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Зададим ширину враппера и отцентрируем его: */
+
+#wrapper {
+    width: 1100px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+#header {
+	height: 200px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+/* Поставим блоки контейнера в ряд: */
+
+#container {
+    display: flex;
+}
+
+/* Назначим теперь ширины блоков так, чтобы в сумме они давали ширину враппера: */
+
+#content {
+    width: 700px;
+}
+
+#left {
+    width: 200px;
+}
+
+#right {
+    width: 200px;
+}
+
+/* Давайте теперь добавим marginы, отщипнув их ширину от контента: */
+
+#content {
+    width: 660px;
+}
+
+#left {
+    width: 200px;
+    margin-right: 20px;
+}
+
+#right {
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* Добавим остальные стили: */
+
+#content {
+	width: 660px;
+	height: 700px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#left {
+	width: 200px;
+	margin-right: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#right {
+	width: 200px;
+	margin-left: 20px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#footer {
+	height: 200px;
+	padding: 20px;
+	border: 1px solid black;
+}
